@@ -76,8 +76,8 @@ const Footer1 = () => {
                     amazing things.
                   </p>
                   <span>Interested in working with us?</span> <br />
-                  <a href="mailto:info@example.com" className="link">
-                    info@example.com
+                  <a href="mailto:info@binjamovil.com" className="link">
+                    info@binjamovil.com
                   </a>
                   <div className="social-icon d-flex align-items-center">
                     <a href="#">
@@ -251,8 +251,8 @@ const Footer2 = () => {
                     amazing things.
                   </p>
                   <span>Interested in working with us?</span> <br />
-                  <a href="mailto:info@example.com" className="link">
-                    info@example.com
+                  <a href="mailto:info@binjamovil.com" className="link">
+                    info@binjamovil.com
                   </a>
                   <div className="social-icon d-flex align-items-center">
                     <a href="#">
@@ -515,8 +515,8 @@ const Footer3 = () => {
                 <div className="footer-address-text">
                   <p>55 Main Street, 2nd block Malborne, Australia</p>
                   <h5>Contact</h5>
-                  <a href="mailto:info@example.com" className="link-mail">
-                    info@example.com
+                  <a href="mailto:info@binjamovil.com" className="link-mail">
+                    info@binjamovil.com
                   </a>
                   <h5 className="pt-3">
                     <a href="tel:+88012345688">+880 (123) 456 88</a>

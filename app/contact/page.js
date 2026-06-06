@@ -56,12 +56,12 @@ const page = () => {
                         </div>
                         <div className="content">
                           <h5>Email</h5>
-                          <a href="mailto:info@example.com" className="link">
-                            info@example.com
+                          <a href="mailto:info@binjamovil.com" className="link">
+                            info@binjamovil.com
                           </a>{" "}
                           <br />
-                          <a href="mailto:info@example.com" className="link">
-                            info@example.com
+                          <a href="mailto:info@binjamovil.com" className="link">
+                            info@binjamovil.com
                           </a>
                         </div>
                       </div>

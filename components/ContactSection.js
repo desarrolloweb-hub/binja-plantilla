@@ -50,7 +50,7 @@ const ContactSection = () => {
                     <div className="content">
                       <p>Send Us Email</p>
                       <h3>
-                        <a href="mailto:info@example.com">info@example.com</a>
+                        <a href="mailto:info@binjamovil.com">info@binjamovil.com</a>
                       </h3>
                     </div>
                   </div>

@@ -47,9 +47,9 @@ const Offcanvas = ({ closeSidebar, sidebar, single }) => {
                       <i className="fal fa-envelope" />
                     </div>
                     <div className="offcanvas__contact-text">
-                      <a href="mailto:info@netband.com">
-                        <span className="mailto:info@netband.com">
-                          info@netband.com
+                      <a href="mailto:info@binjamovil.com">
+                        <span className="mailto:info@binjamovil.com">
+                          info@binjamovil.com
                         </span>
                       </a>
                     </div>

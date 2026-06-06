@@ -69,8 +69,8 @@ const Header1 = ({ openSidebar, single, menus }) => {
             <ul className="contact-list">
               <li>
                 <i className="far fa-envelope" />
-                <a href="mailto:info@example.com" className="link">
-                  info@example.com
+                <a href="mailto:info@binjamovil.com" className="link">
+                  info@binjamovil.com
                 </a>
               </li>
               <li>
@@ -171,8 +171,8 @@ const Header2 = ({ openSidebar, single, menus }) => {
             <ul className="contact-list">
               <li>
                 <i className="far fa-envelope" />
-                <a href="mailto:info@example.com" className="link">
-                  info@example.com
+                <a href="mailto:info@binjamovil.com" className="link">
+                  info@binjamovil.com
                 </a>
               </li>
               <li>
@@ -299,8 +299,8 @@ const Header3 = ({ openSidebar, single, menus }) => {
                 </li>
                 <li>
                   <i className="fas fa-envelope" />
-                  <a href="mailto:info@example.com" className="line-none">
-                    info@example.com
+                  <a href="mailto:info@binjamovil.com" className="line-none">
+                    info@binjamovil.com
                   </a>
                 </li>
               </ul>
