@@ -67,7 +67,7 @@ const Footer1 = () => {
               <div className="single-footer-widget">
                 <div className="widget-head">
                   <Link href="/">
-                    <img src="assets/img/logo/footer-logo.svg" alt="logo-img" />
+                    <img src="assets/img/logo/binja-movil.webp" alt="Binja Móvil" style={{height: "60px", width: "auto"}} />
                   </Link>
                 </div>
                 <div className="footer-content">
@@ -242,7 +242,7 @@ const Footer2 = () => {
               <div className="single-footer-widget">
                 <div className="widget-head">
                   <Link href="/">
-                    <img src="assets/img/logo/footer-logo.svg" alt="logo-img" />
+                    <img src="assets/img/logo/binja-movil.webp" alt="Binja Móvil" style={{height: "60px", width: "auto"}} />
                   </Link>
                 </div>
                 <div className="footer-content">
@@ -411,7 +411,7 @@ const Footer3 = () => {
         <div className="footer-top">
           <div className="footer-logo wow fadeInUp" data-wow-delay=".3s">
             <Link href="/">
-              <img src="assets/img/logo/footer-logo-2.svg" alt="img" />
+              <img src="assets/img/logo/binja-movil.webp" alt="Binja Móvil" style={{height: "60px", width: "auto"}} />
             </Link>
           </div>
           <ul className="wow fadeInUp" data-wow-delay=".5s">
@@ -513,7 +513,7 @@ const Footer3 = () => {
                   <h5>Locations:</h5>
                 </div>
                 <div className="footer-address-text">
-                  <p>55 Main Street, 2nd block Malborne, Australia</p>
+                  <p>3er Ave. 306, Col. Guerra, Guadalupe NL</p>
                   <h5>Contact</h5>
                   <a href="mailto:info@binjamovil.com" className="link-mail">
                     info@binjamovil.com

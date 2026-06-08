@@ -75,22 +75,13 @@ const Header1 = ({ openSidebar, single, menus }) => {
               </li>
               <li>
                 <i className="fas fa-map-marker-alt" />
-                55 Main Street, 2nd block, Malborne ,Australia
+                3er Ave. 306, Col. Guerra, Guadalupe NL
               </li>
             </ul>
             <div className="top-right">
               <div className="social-icon d-flex align-items-center">
-                <a href="#">
-                  <i className="fab fa-facebook-f" />
-                </a>
-                <a href="#">
-                  <i className="fab fa-twitter" />
-                </a>
-                <a href="#">
-                  <i className="fab fa-vimeo-v" />
-                </a>
-                <a href="#">
-                  <i className="fab fa-pinterest-p" />
+                <a href="https://instagram.com/binjamovil" target="_blank" rel="noopener noreferrer">
+                  <i className="fab fa-instagram" />
                 </a>
               </div>
               <ul className="header-menu">
@@ -116,7 +107,7 @@ const Header1 = ({ openSidebar, single, menus }) => {
                 <div className="header-left">
                   <div className="logo">
                     <Link href="/" className="header-logo">
-                      <img src="assets/img/logo/logo.svg" alt="logo-img" />
+                      <span style={{display: "inline-flex", alignItems: "center", gap: "10px"}}><img src="assets/img/logo/binja-movil.webp" alt="Binja Móvil" style={{height: "50px", width: "auto"}} /><span style={{fontWeight: 700, fontSize: "22px", color: "#d62828", letterSpacing: "0.5px"}}>Binja Móvil</span></span>
                     </Link>
                   </div>
                   <div className="mean__menu-wrapper">
@@ -182,18 +173,9 @@ const Header2 = ({ openSidebar, single, menus }) => {
             </ul>
             <div className="top-right">
               <div className="social-icon d-flex align-items-center">
-                <span>Follow Us:</span>
-                <a href="#">
-                  <i className="fab fa-facebook-f" />
-                </a>
-                <a href="#">
-                  <i className="fab fa-twitter" />
-                </a>
-                <a href="#">
-                  <i className="fab fa-pinterest-p" />
-                </a>
-                <a href="#">
-                  <i className="fab fa-youtube" />
+                <span>Síguenos:</span>
+                <a href="https://instagram.com/binjamovil" target="_blank" rel="noopener noreferrer">
+                  <i className="fab fa-instagram" />
                 </a>
               </div>
             </div>
@@ -207,7 +189,7 @@ const Header2 = ({ openSidebar, single, menus }) => {
               <div className="header-left">
                 <div className="logo">
                   <Link href="/" className="header-logo">
-                    <img src="assets/img/logo/logo.svg" alt="logo-img" />
+                    <span style={{display: "inline-flex", alignItems: "center", gap: "10px"}}><img src="assets/img/logo/binja-movil.webp" alt="Binja Móvil" style={{height: "50px", width: "auto"}} /><span style={{fontWeight: 700, fontSize: "22px", color: "#d62828", letterSpacing: "0.5px"}}>Binja Móvil</span></span>
                   </Link>
                 </div>
               </div>
@@ -321,17 +303,8 @@ const Header3 = ({ openSidebar, single, menus }) => {
                 />
               </div>
               <div className="social-icon d-flex align-items-center">
-                <a href="#">
-                  <i className="fab fa-facebook-f" />
-                </a>
-                <a href="#">
-                  <i className="fab fa-twitter" />
-                </a>
-                <a href="#">
-                  <i className="fab fa-vimeo-v" />
-                </a>
-                <a href="#">
-                  <i className="fab fa-pinterest-p" />
+                <a href="https://instagram.com/binjamovil" target="_blank" rel="noopener noreferrer">
+                  <i className="fab fa-instagram" />
                 </a>
               </div>
             </div>
@@ -346,7 +319,7 @@ const Header3 = ({ openSidebar, single, menus }) => {
               <div className="header-main">
                 <div className="logo">
                   <Link href="/" className="header-logo">
-                    <img src="assets/img/logo/logo-2.svg" alt="logo-img" />
+                    <span style={{display: "inline-flex", alignItems: "center", gap: "10px"}}><img src="assets/img/logo/binja-movil.webp" alt="Binja Móvil" style={{height: "50px", width: "auto"}} /><span style={{fontWeight: 700, fontSize: "22px", color: "#d62828", letterSpacing: "0.5px"}}>Binja Móvil</span></span>
                   </Link>
                 </div>
                 <div className="header-left">
@@ -396,10 +369,10 @@ const Header4 = ({ openSidebar, single, menus }) => {
             <div className="header-left">
               <div className="logo">
                 <Link href="/" className="header-logo">
-                  <img src="assets/img/logo/logo.svg" alt="logo-img" />
+                  <span style={{display: "inline-flex", alignItems: "center", gap: "10px"}}><img src="assets/img/logo/binja-movil.webp" alt="Binja Móvil" style={{height: "50px", width: "auto"}} /><span style={{fontWeight: 700, fontSize: "22px", color: "#d62828", letterSpacing: "0.5px"}}>Binja Móvil</span></span>
                 </Link>
                 <Link href="/" className="header-logo-2">
-                  <img src="assets/img/logo/white-logo.svg" alt="logo-img" />
+                  <span style={{display: "inline-flex", alignItems: "center", gap: "10px"}}><img src="assets/img/logo/binja-movil.webp" alt="Binja Móvil" style={{height: "50px", width: "auto"}} /><span style={{fontWeight: 700, fontSize: "22px", color: "#d62828", letterSpacing: "0.5px"}}>Binja Móvil</span></span>
                 </Link>
               </div>
             </div>

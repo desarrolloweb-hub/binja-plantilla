@@ -31,8 +31,8 @@ const page = () => {
                         <div className="content">
                           <h5>Location</h5>
                           <p>
-                            55 Main street, 2nd block, <br />
-                            Melbourne, Australia
+                            3er Ave. 306, Col. Guerra, <br />
+                            Guadalupe, NL
                           </p>
                         </div>
                       </div>
