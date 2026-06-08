@@ -1,1 +1,99 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Kode+Mono:wght@400..700&display=swap");
+
+/* === Hover effects del header === */
+
+/* Teléfono: el círculo se rellena de rojo y el ícono se vuelve blanco; texto se subraya en rojo */
+.binja-phone {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  margin-right: 20px;
+  text-decoration: none;
+  transition: transform 0.25s ease;
+}
+.binja-phone:hover {
+  transform: translateY(-2px);
+}
+.binja-phone__icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: #f1f1f1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+.binja-phone__icon i {
+  color: #d62828;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+.binja-phone:hover .binja-phone__icon {
+  background: #d62828;
+  transform: rotate(-12deg);
+}
+.binja-phone:hover .binja-phone__icon i {
+  color: #fff;
+}
+.binja-phone__content p {
+  margin: 0;
+  font-size: 13px;
+  color: #888;
+  letter-spacing: 0.5px;
+}
+.binja-phone__content h6 {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 700;
+  color: #111;
+  transition: color 0.3s ease;
+}
+.binja-phone:hover .binja-phone__content h6 {
+  color: #d62828;
+}
+
+/* Botón Agenda consultoría: oscurece + se eleva con sombra */
+.binja-cta {
+  transition: background 0.3s ease, transform 0.25s ease, box-shadow 0.25s ease;
+}
+.binja-cta:hover {
+  background: #a51d1d !important;
+  color: #fff !important;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(214, 40, 40, 0.35);
+}
+
+/* Top bar: Soporte Técnico y Cobertura cambian a rojo con subrayado */
+.header-top-wrapper .top-right .header-menu li a {
+  transition: color 0.25s ease;
+  position: relative;
+}
+.header-top-wrapper .top-right .header-menu li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0;
+  height: 2px;
+  background: #d62828;
+  transition: width 0.3s ease;
+}
+.header-top-wrapper .top-right .header-menu li a:hover {
+  color: #d62828 !important;
+}
+.header-top-wrapper .top-right .header-menu li a:hover::after {
+  width: 100%;
+}
+
+/* Quita los overlays rojos decorativos del header que sangran en viewports anchos (>1899px) */
+.header-top-section::before,
+.header-top-section-2::before,
+.header-top-section-3::before,
+.header-section-1::before,
+.header-section-2::before,
+.header-section-3::before,
+.header-section-4::before {
+  display: none !important;
+}

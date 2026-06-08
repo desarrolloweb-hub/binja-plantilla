@@ -3,11 +3,10 @@ import Link from "next/link";
 import { Fragment, useState } from "react";
 
 const navItems = [
-  { id: 1, href: "/", title: "Inicio" },
-  { id: 2, href: "soluciones", title: "Soluciones" },
-  { id: 3, href: "tecnologia", title: "Tecnología" },
-  { id: 4, href: "cobertura", title: "Cobertura" },
-  { id: 5, href: "contacto", title: "Contacto" },
+  { id: 1, href: "soluciones", title: "Soluciones" },
+  { id: 2, href: "equipos", title: "Equipos" },
+  { id: 3, href: "sectores", title: "Sectores" },
+  { id: 4, href: "contacto", title: "Contacto" },
 ];
 
 const Menus = ({ single, menus }) => {

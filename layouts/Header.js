@@ -86,13 +86,10 @@ const Header1 = ({ openSidebar, single, menus }) => {
               </div>
               <ul className="header-menu">
                 <li>
-                  <Link href="contact">Help</Link>
+                  <Link href="contact">Soporte Técnico</Link>
                 </li>
                 <li>
-                  <Link href="contact">Support</Link>
-                </li>
-                <li>
-                  <Link href="faq">Faqs</Link>
+                  <Link href="cobertura">Cobertura</Link>
                 </li>
               </ul>
             </div>
@@ -117,24 +114,35 @@ const Header1 = ({ openSidebar, single, menus }) => {
                   </div>
                 </div>
                 <div className="header-right d-flex justify-content-end align-items-center">
-                  <div className="contact-info">
-                    <div className="icon">
-                      <img src="assets/img/call.png" alt="img" />
+                  <a href="tel:+23645689622" className="binja-phone">
+                    <div className="binja-phone__icon">
+                      <i className="fas fa-phone-alt" />
                     </div>
-                    <div className="content">
-                      <p>Phone:</p>
-                      <h6>
-                        <a href="tel:+23645689622">+236 (456) 896 22</a>
-                      </h6>
+                    <div className="binja-phone__content">
+                      <p>PHONE:</p>
+                      <h6>+236 (456) 896 22</h6>
                     </div>
-                  </div>
+                  </a>
                   <div className="header-button">
-                    <Link href="contact" className="link-btn">
-                      <span>Contact us</span>
-                      <i className="fas fa-chevron-right" />
+                    <Link
+                      href="contact"
+                      className="binja-cta"
+                      style={{
+                        display: "inline-block",
+                        background: "#d62828",
+                        color: "#fff",
+                        fontWeight: 700,
+                        fontSize: "16px",
+                        padding: "16px 32px",
+                        borderRadius: "10px",
+                        textDecoration: "none",
+                        whiteSpace: "nowrap",
+                      }}
+                    >
+                      Agenda consultoría
                     </Link>
                   </div>
-                  <SearchBtn />
+
                   <div className="header__hamburger d-xl-none my-auto">
                     <div
                       className="sidebar__toggle"
@@ -236,11 +244,11 @@ const Header2 = ({ openSidebar, single, menus }) => {
                     <i className="far fa-shopping-cart" />
                   </Link>
                 </div>
-                <SearchBtn />
+
                 <div className="header-button">
                   <Link href="contact" className="theme-btn">
                     <span>
-                      get A Quote
+                      Agenda consultoría
                       <i className="fas fa-chevron-right" />
                     </span>
                   </Link>
@@ -333,7 +341,7 @@ const Header3 = ({ openSidebar, single, menus }) => {
                   <div className="header-button">
                     <Link href="contact" className="theme-btn theme-btn-2">
                       <span>
-                        contact us
+                        Agenda consultoría
                         <i className="fas fa-chevron-right" />
                       </span>
                     </Link>
@@ -382,11 +390,11 @@ const Header4 = ({ openSidebar, single, menus }) => {
               </div>
             </div>
             <div className="header-right d-flex justify-content-end align-items-center">
-              <SearchBtn />
+
               <div className="header-button">
                 <Link href="contact" className="theme-btn">
                   <span>
-                    subscribe now
+                    Agenda consultoría
                     <i className="fas fa-chevron-right" />
                   </span>
                 </Link>
