@@ -12,58 +12,6 @@ const page = () => {
     <NetBandLayout header={1}>
       {/*<< Hero Section Start >>*/}
       <Home1 />
-      {/*<< Feature Section Start >>*/}
-      <section className="feature-section fix section-padding">
-        <div className="shape-image">
-          <img src="assets/img/shape.png" alt="shape-img" />
-        </div>
-        <div className="container">
-          <div className="row g-4">
-            <div
-              className="col-xxl-4 col-xl-6 wow fadeInUp"
-              data-wow-delay=".3s"
-            >
-              <div className="single-feature-items">
-                <div className="content">
-                  <span>Features</span>
-                  <h3>TV &amp; Streaming</h3>
-                </div>
-                <div className="icon">
-                  <i className="flaticon-smart-tv-1" />
-                </div>
-              </div>
-            </div>
-            <div
-              className="col-xxl-4 col-xl-6 wow fadeInUp"
-              data-wow-delay=".5s"
-            >
-              <div className="single-feature-items active">
-                <div className="content">
-                  <span>Features</span>
-                  <h3>Fast Internet</h3>
-                </div>
-                <div className="icon">
-                  <i className="flaticon-connection" />
-                </div>
-              </div>
-            </div>
-            <div
-              className="col-xxl-4 col-xl-6 wow fadeInUp"
-              data-wow-delay=".7s"
-            >
-              <div className="single-feature-items">
-                <div className="content">
-                  <span>Features</span>
-                  <h3>All for Mobile</h3>
-                </div>
-                <div className="icon">
-                  <i className="flaticon-smart-tv-3" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
       {/*<< About Section Start >>*/}
       <section className="about-section fix section-padding pt-0">
         <div className="container">

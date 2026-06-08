@@ -1,4 +1,395 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Kode+Mono:wght@400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Manrope:wght@400..800&family=Kode+Mono:wght@400..700&display=swap");
+
+/* === Hero "Conectividad en movimiento" === */
+.binja-hero {
+  position: relative;
+  background: #0c1117;
+  padding: 140px 0 165px;
+  overflow: visible;
+}
+.binja-hero__bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center right;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+.binja-hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(8, 12, 18, 0.95) 0%,
+    rgba(8, 12, 18, 0.85) 35%,
+    rgba(8, 12, 18, 0.45) 70%,
+    rgba(8, 12, 18, 0.15) 100%
+  );
+  z-index: 1;
+}
+.binja-hero__content {
+  position: relative;
+  z-index: 2;
+}
+.binja-hero__label {
+  display: inline-block;
+  color: #ff2d2d;
+  font-family: "Manrope", "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.binja-hero__title {
+  color: #fff;
+  font-family: "Manrope", "Inter", sans-serif;
+  font-size: clamp(34px, 4.2vw, 64px);
+  font-weight: 800;
+  line-height: 1.05;
+  margin-bottom: 20px;
+  letter-spacing: -1.5px;
+  text-transform: none !important;
+}
+.binja-hero__desc {
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 15px;
+  line-height: 1.55;
+  max-width: 440px;
+  margin-bottom: 24px;
+}
+
+/* Ecuación SATELITAL + 4G/5G + EQUIPOS = CONECTIVIDAD HÍBRIDA */
+.binja-hero__equation {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 40px;
+}
+.binja-hero__eq-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  color: rgba(255, 255, 255, 0.9);
+  min-width: 84px;
+}
+.binja-hero__eq-item i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 26px;
+  color: #fff;
+  transition: background 0.3s ease, border-color 0.3s ease;
+}
+.binja-hero__eq-item:hover i {
+  background: rgba(226, 29, 29, 0.15);
+  border-color: rgba(226, 29, 29, 0.5);
+}
+.binja-hero__eq-item span {
+  font-family: "Manrope", "Inter", sans-serif;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.7);
+}
+.binja-hero__eq-op {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 20px;
+  font-weight: 300;
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+.binja-hero__eq-result {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  height: 60px;
+  background: rgba(34, 197, 94, 0.1);
+  border: 1.5px solid rgba(34, 197, 94, 0.6);
+  color: #22c55e;
+  padding: 0 24px;
+  border-radius: 14px;
+  font-family: "Manrope", "Inter", sans-serif;
+  font-weight: 800;
+  font-size: 14px;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  line-height: 1.2;
+  margin-left: 8px;
+  max-width: 240px;
+  transition: background 0.3s ease, border-color 0.3s ease;
+}
+.binja-hero__eq-result:hover {
+  background: rgba(34, 197, 94, 0.18);
+  border-color: #22c55e;
+}
+.binja-hero__eq-result i {
+  font-size: 20px;
+  flex-shrink: 0;
+}
+.binja-hero__eq-result span {
+  white-space: normal;
+}
+
+/* Botones */
+.binja-hero__buttons {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+  flex-wrap: wrap;
+}
+.binja-hero__cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  background: #e21d1d;
+  color: #fff;
+  font-weight: 700;
+  font-size: 17px;
+  padding: 20px 36px;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: background 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+}
+.binja-hero__cta:hover {
+  background: #a51d1d;
+  color: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(226, 29, 29, 0.4);
+}
+.binja-hero__video {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+.binja-hero__video-play {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #e21d1d;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 16px;
+  transition: transform 0.3s ease, background 0.3s ease;
+  box-shadow: 0 0 0 0 rgba(226, 29, 29, 0.6);
+  animation: binja-pulse 2s infinite;
+}
+.binja-hero__video:hover .binja-hero__video-play {
+  transform: scale(1.08);
+  background: #a51d1d;
+}
+.binja-hero__video-text {
+  font-size: 16px;
+}
+@keyframes binja-pulse {
+  0% { box-shadow: 0 0 0 0 rgba(226, 29, 29, 0.55); }
+  70% { box-shadow: 0 0 0 18px rgba(226, 29, 29, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(226, 29, 29, 0); }
+}
+
+/* Tarjetas inferiores */
+.binja-hero__cards-wrap {
+  position: relative;
+  z-index: 3;
+  margin-top: 140px;
+  margin-bottom: -230px;
+}
+.binja-solution-card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+.binja-solution-card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: transparent;
+  transition: background 0.3s ease;
+}
+.binja-solution-card.is-active::before,
+.binja-solution-card:hover::before {
+  background: #e21d1d;
+}
+.binja-solution-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 24px 50px rgba(0, 0, 0, 0.16);
+}
+.binja-solution-card__label {
+  display: inline-block;
+  color: #e21d1d;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.binja-solution-card__title {
+  font-size: 24px;
+  font-weight: 800;
+  margin: 0 0 8px;
+  color: #111;
+}
+.binja-solution-card__desc {
+  font-size: 14px;
+  color: #555;
+  margin: 0;
+  line-height: 1.5;
+}
+.binja-solution-card__icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: #fde8e8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.binja-solution-card__icon i {
+  color: #e21d1d;
+  font-size: 28px;
+}
+
+/* Da aire a la sección que viene después del hero (las cards sobresalen -110px) */
+.binja-hero + section,
+.binja-hero + .about-section {
+  padding-top: 280px !important;
+}
+
+@media (max-width: 991px) {
+  .binja-hero { padding: 60px 0 80px; }
+  .binja-hero__equation { gap: 12px 10px; }
+  .binja-hero__eq-result { width: 100%; justify-content: center; margin-left: 0; }
+  .binja-hero__cards-wrap { margin-top: 50px; margin-bottom: -80px; }
+  .binja-hero + section,
+  .binja-hero + .about-section {
+    padding-top: 140px !important;
+  }
+}
+
+/* === Layout del header principal (3 zonas: logo · menú · phone+CTA) === */
+.binja-header-main {
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  width: 100%;
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 6px 15px;
+}
+/* El logo de Binja compacto */
+.binja-header-main .header-logo span span {
+  font-size: 19px !important;
+}
+.binja-header-main .header-logo img {
+  height: 40px !important;
+}
+.binja-header-main .header-left {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+}
+.binja-header-main .header-left .logo,
+.binja-header-main .header-left .header-logo {
+  display: flex;
+  align-items: center;
+  line-height: 1;
+}
+.binja-header-center {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.binja-header-center .main-menu ul {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/* Anula el margin-inline-end de la plantilla para que solo el gap controle el espaciado */
+.binja-header-center .main-menu ul li {
+  margin-inline-end: 0 !important;
+  margin: 0 !important;
+}
+.binja-header-center .main-menu ul li {
+  display: flex;
+  align-items: center;
+}
+.binja-header-center .main-menu ul li a {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1;
+  color: #111;
+  padding: 18px 0 !important;
+  transition: color 0.25s ease;
+}
+.binja-header-center .main-menu ul li a:hover {
+  color: #d62828;
+}
+.binja-header-main .header-right {
+  flex-shrink: 0;
+  gap: 22px;
+}
+/* Divisor sutil entre el teléfono y el botón CTA */
+.binja-header-main .header-right .binja-phone {
+  position: relative;
+  margin-right: 22px !important;
+}
+.binja-header-main .header-right .binja-phone::after {
+  content: "";
+  position: absolute;
+  right: -22px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 34px;
+  background: #e5e5e5;
+}
+@media (max-width: 1199px) {
+  .binja-header-center { display: none; }
+  .binja-header-main .header-right .binja-phone::after { display: none; }
+}
+
+/* Texto del top bar en blanco suave (sobre fondo negro) */
+.header-top-wrapper .contact-list li,
+.header-top-wrapper .contact-list li a,
+.header-top-wrapper .top-right .social-icon a,
+.header-top-wrapper .top-right .social-icon span,
+.header-top-wrapper .top-right .header-menu li a {
+  color: rgba(255, 255, 255, 0.75) !important;
+}
 
 /* === Hover effects del header === */
 
@@ -6,7 +397,7 @@
 .binja-phone {
   display: inline-flex;
   align-items: center;
-  gap: 14px;
+  gap: 11px;
   margin-right: 20px;
   text-decoration: none;
   transition: transform 0.25s ease;
@@ -15,8 +406,8 @@
   transform: translateY(-2px);
 }
 .binja-phone__icon {
-  width: 52px;
-  height: 52px;
+  width: 46px;
+  height: 46px;
   border-radius: 50%;
   background: #f1f1f1;
   display: flex;
@@ -27,7 +418,7 @@
 }
 .binja-phone__icon i {
   color: #d62828;
-  font-size: 20px;
+  font-size: 18px;
   transition: color 0.3s ease;
 }
 .binja-phone:hover .binja-phone__icon {
@@ -39,15 +430,18 @@
 }
 .binja-phone__content p {
   margin: 0;
-  font-size: 13px;
-  color: #888;
-  letter-spacing: 0.5px;
+  font-size: 11px;
+  font-weight: 600;
+  color: #999;
+  letter-spacing: 0.8px;
+  line-height: 1.3;
 }
 .binja-phone__content h6 {
   margin: 0;
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 700;
   color: #111;
+  line-height: 1.3;
   transition: color 0.3s ease;
 }
 .binja-phone:hover .binja-phone__content h6 {

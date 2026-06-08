@@ -100,13 +100,15 @@ const Header1 = ({ openSidebar, single, menus }) => {
         <div id="header-sticky" className="header-1">
           <div className="container-fluid">
             <div className="mega-menu-wrapper">
-              <div className="header-main">
+              <div className="header-main binja-header-main">
                 <div className="header-left">
                   <div className="logo">
                     <Link href="/" className="header-logo">
                       <span style={{display: "inline-flex", alignItems: "center", gap: "10px"}}><img src="assets/img/logo/binja-movil.webp" alt="Binja Móvil" style={{height: "50px", width: "auto"}} /><span style={{fontWeight: 700, fontSize: "22px", color: "#d62828", letterSpacing: "0.5px"}}>Binja Móvil</span></span>
                     </Link>
                   </div>
+                </div>
+                <div className="binja-header-center">
                   <div className="mean__menu-wrapper">
                     <div className="main-menu">
                       <Menus single={single} menus={menus} />
@@ -131,10 +133,10 @@ const Header1 = ({ openSidebar, single, menus }) => {
                         display: "inline-block",
                         background: "#d62828",
                         color: "#fff",
-                        fontWeight: 700,
-                        fontSize: "16px",
-                        padding: "16px 32px",
-                        borderRadius: "10px",
+                        fontWeight: 600,
+                        fontSize: "14px",
+                        padding: "11px 22px",
+                        borderRadius: "8px",
                         textDecoration: "none",
                         whiteSpace: "nowrap",
                       }}
