@@ -1,4 +1,7 @@
+import BeneficiosSection from "@/components/BeneficiosSection";
 import M2MSection from "@/components/M2MSection";
+import MarqueeSection from "@/components/MarqueeSection";
+import SectoresSection from "@/components/SectoresSection";
 import NetBandAccordion from "@/components/NetBandAccordion";
 import ProgressBar from "@/components/ProgressBar";
 import Service1 from "@/components/Service";
@@ -15,6 +18,12 @@ const page = () => {
       <Home1 />
       {/*<< M2M / IoT Section Start >>*/}
       <M2MSection />
+      {/*<< Sectores Section Start >>*/}
+      <SectoresSection />
+      {/*<< Marquee Section Start >>*/}
+      <MarqueeSection />
+      {/*<< Beneficios Section Start >>*/}
+      <BeneficiosSection />
       {/*<< About Section Start >>*/}
       <section className="about-section fix section-padding pt-0">
         <div className="container">

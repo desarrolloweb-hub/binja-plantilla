@@ -503,6 +503,276 @@
   .binja-m2m__image { margin-top: 40px; }
 }
 
+/* === Sección Sectores / Casos de uso === */
+.binja-sectores {
+  background: #fff;
+  padding: 90px 0;
+}
+.binja-sectores__head {
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto 50px;
+}
+.binja-sectores__label {
+  display: inline-block;
+  color: #e21d1d;
+  font-family: "Manrope", "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.binja-sectores__title {
+  font-family: "Manrope", "Inter", sans-serif;
+  font-size: clamp(30px, 3.6vw, 48px);
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -1px;
+  color: #111;
+  text-transform: none !important;
+  margin-bottom: 18px;
+}
+.binja-sectores__subtitle {
+  font-size: 17px;
+  line-height: 1.6;
+  color: #666;
+  margin: 0;
+}
+
+.binja-sector-card {
+  display: block;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 16px;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  height: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+.binja-sector-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 22px 45px rgba(0, 0, 0, 0.12);
+  border-color: transparent;
+}
+.binja-sector-card__img {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+.binja-sector-card__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+.binja-sector-card:hover .binja-sector-card__img img {
+  transform: scale(1.06);
+}
+.binja-sector-card__body {
+  padding: 24px 24px 28px;
+}
+.binja-sector-card__heading {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  margin-bottom: 12px;
+}
+.binja-sector-card__icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #fde8e8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.binja-sector-card__icon i {
+  color: #e21d1d;
+  font-size: 17px;
+}
+.binja-sector-card__heading h3 {
+  flex: 1;
+  font-family: "Manrope", "Inter", sans-serif;
+  font-size: 19px;
+  font-weight: 800;
+  line-height: 1.25;
+  color: #111;
+  margin: 0;
+  text-transform: none !important;
+}
+.binja-sector-card__arrow {
+  color: #e21d1d;
+  font-size: 14px;
+  flex-shrink: 0;
+  margin-top: 4px;
+  transition: transform 0.3s ease;
+}
+.binja-sector-card:hover .binja-sector-card__arrow {
+  transform: translateX(4px);
+}
+.binja-sector-card__body p {
+  font-size: 14.5px;
+  line-height: 1.6;
+  color: #666;
+  margin: 0;
+  padding-left: 56px;
+}
+@media (max-width: 575px) {
+  .binja-sectores { padding: 60px 0; }
+  .binja-sector-card__body p { padding-left: 0; }
+}
+
+/* === Marquee de textos (carrusel infinito) === */
+.binja-marquee {
+  background: #f4f1ec;
+  padding: 22px 0;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.binja-marquee__track {
+  display: inline-flex;
+  align-items: center;
+  animation: binja-marquee-scroll 28s linear infinite;
+}
+.binja-marquee__item {
+  display: inline-flex;
+  align-items: center;
+  gap: 38px;
+  padding-right: 38px;
+}
+.binja-marquee__item span:first-child {
+  font-family: "Manrope", "Inter", sans-serif;
+  font-size: 26px;
+  font-weight: 800;
+  color: #1a1a1a;
+  letter-spacing: -0.3px;
+}
+.binja-marquee__dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #e21d1d;
+  flex-shrink: 0;
+}
+@keyframes binja-marquee-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+@media (max-width: 767px) {
+  .binja-marquee__item span:first-child { font-size: 20px; }
+  .binja-marquee__item { gap: 26px; padding-right: 26px; }
+}
+
+/* === Sección Beneficios (Solución Híbrida) === */
+.binja-beneficios {
+  background: #e21d1d;
+  padding: 90px 0;
+}
+.binja-beneficios__head {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 55px;
+}
+.binja-beneficios__label {
+  display: inline-block;
+  color: rgba(255, 255, 255, 0.85);
+  font-family: "Manrope", "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.binja-beneficios__title {
+  font-family: "Manrope", "Inter", sans-serif;
+  font-size: clamp(30px, 3.8vw, 50px);
+  font-weight: 800;
+  line-height: 1.12;
+  letter-spacing: -1px;
+  color: #fff;
+  text-transform: none !important;
+  margin-bottom: 18px;
+}
+.binja-beneficios__subtitle {
+  font-size: 16.5px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.85);
+  margin: 0;
+}
+
+.binja-beneficio-card {
+  position: relative;
+  background: #fff;
+  border-radius: 16px;
+  padding: 26px 24px;
+  height: 100%;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.binja-beneficio-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 26px 50px rgba(0, 0, 0, 0.22);
+}
+.binja-beneficio-card__num {
+  position: absolute;
+  top: 14px;
+  right: 22px;
+  font-family: "Manrope", "Inter", sans-serif;
+  font-size: 64px;
+  font-weight: 800;
+  color: rgba(226, 29, 29, 0.07);
+  line-height: 1;
+  pointer-events: none;
+}
+.binja-beneficio-card__icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #fde8e8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+.binja-beneficio-card__icon i {
+  color: #e21d1d;
+  font-size: 20px;
+}
+.binja-beneficio-card__title {
+  font-family: "Manrope", "Inter", sans-serif;
+  font-size: 21px;
+  font-weight: 800;
+  color: #111;
+  margin: 0 0 2px;
+  text-transform: none !important;
+  line-height: 1.2;
+}
+.binja-beneficio-card__subtitle {
+  font-size: 15px;
+  font-weight: 700;
+  color: #e21d1d;
+  margin: 0 0 12px;
+}
+.binja-beneficio-card__divider {
+  width: 34px;
+  height: 3px;
+  background: #e21d1d;
+  border-radius: 3px;
+  margin-bottom: 14px;
+}
+.binja-beneficio-card__desc {
+  font-size: 13.5px;
+  line-height: 1.55;
+  color: #666;
+  margin: 0;
+}
+@media (max-width: 767px) {
+  .binja-beneficios { padding: 60px 0; }
+}
+
 /* === Hover effects del header === */
 
 /* Teléfono: el círculo se rellena de rojo y el ícono se vuelve blanco; texto se subraya en rojo */
