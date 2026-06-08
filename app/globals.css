@@ -281,7 +281,7 @@
 /* Da aire a la sección que viene después del hero (las cards sobresalen -110px) */
 .binja-hero + section,
 .binja-hero + .about-section {
-  padding-top: 280px !important;
+  padding-top: 130px !important;
 }
 
 @media (max-width: 991px) {
@@ -304,7 +304,7 @@
   width: 100%;
   max-width: 1320px;
   margin: 0 auto;
-  padding: 6px 15px;
+  padding: 6px 30px;
 }
 /* El logo de Binja compacto */
 .binja-header-main .header-logo span span {
@@ -389,6 +389,118 @@
 .header-top-wrapper .top-right .social-icon span,
 .header-top-wrapper .top-right .header-menu li a {
   color: rgba(255, 255, 255, 0.75) !important;
+}
+
+/* === Sección M2M / IoT === */
+.binja-m2m {
+  background: #f4f5f7;
+  padding: 50px 0 60px;
+}
+.binja-m2m__label {
+  display: inline-block;
+  color: #e21d1d;
+  font-family: "Manrope", "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+.binja-m2m__title {
+  font-family: "Manrope", "Inter", sans-serif;
+  font-size: clamp(28px, 2.8vw, 40px);
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.5px;
+  text-transform: none !important;
+  color: #111;
+  margin-bottom: 12px;
+}
+.binja-m2m__subtitle {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 16px;
+}
+.binja-m2m__link-line {
+  font-size: 15px;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 20px;
+}
+.binja-m2m__link {
+  color: #e21d1d;
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+.binja-m2m__link:hover {
+  color: #a51d1d;
+  text-decoration: underline;
+}
+.binja-m2m__text {
+  font-size: 14.5px;
+  line-height: 1.55;
+  color: #555;
+  margin-bottom: 12px;
+}
+.binja-m2m__list {
+  list-style: none;
+  padding: 0;
+  margin: 22px 0 28px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px 24px;
+}
+.binja-m2m__list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14.5px;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 0;
+}
+@media (max-width: 575px) {
+  .binja-m2m__list { grid-template-columns: 1fr; }
+}
+.binja-m2m__list li i {
+  color: #e21d1d;
+  font-size: 17px;
+  flex-shrink: 0;
+}
+.binja-m2m__cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: #e21d1d;
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 16px 34px;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: background 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+}
+.binja-m2m__cta:hover {
+  background: #a51d1d;
+  color: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(226, 29, 29, 0.35);
+}
+.binja-m2m__image {
+  display: flex;
+  justify-content: center;
+}
+.binja-m2m__image img {
+  width: 100%;
+  max-width: 460px;
+  height: auto;
+  border-radius: 22px;
+  display: block;
+  box-shadow: 0 30px 60px rgba(15, 23, 42, 0.18);
+}
+@media (max-width: 991px) {
+  .binja-m2m { padding: 70px 0; }
+  .binja-m2m__image { margin-top: 40px; }
 }
 
 /* === Hover effects del header === */

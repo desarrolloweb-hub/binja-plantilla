@@ -134,11 +134,12 @@ const Header1 = ({ openSidebar, single, menus }) => {
                         background: "#d62828",
                         color: "#fff",
                         fontWeight: 600,
-                        fontSize: "14px",
-                        padding: "11px 22px",
-                        borderRadius: "8px",
+                        fontSize: "13px",
+                        padding: "9px 20px",
+                        borderRadius: "7px",
                         textDecoration: "none",
                         whiteSpace: "nowrap",
+                        letterSpacing: "0.2px",
                       }}
                     >
                       Agenda consultoría

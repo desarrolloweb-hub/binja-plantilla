@@ -1,3 +1,4 @@
+import M2MSection from "@/components/M2MSection";
 import NetBandAccordion from "@/components/NetBandAccordion";
 import ProgressBar from "@/components/ProgressBar";
 import Service1 from "@/components/Service";
@@ -12,6 +13,8 @@ const page = () => {
     <NetBandLayout header={1}>
       {/*<< Hero Section Start >>*/}
       <Home1 />
+      {/*<< M2M / IoT Section Start >>*/}
+      <M2MSection />
       {/*<< About Section Start >>*/}
       <section className="about-section fix section-padding pt-0">
         <div className="container">
