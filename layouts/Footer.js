@@ -67,30 +67,26 @@ const Footer1 = () => {
               <div className="single-footer-widget">
                 <div className="widget-head">
                   <Link href="/">
-                    <img src="assets/img/logo/binja-movil.webp" alt="Binja Móvil" style={{height: "60px", width: "auto"}} />
+                    <span style={{display: "inline-flex", alignItems: "center", gap: "12px"}}><span style={{display: "inline-flex", alignItems: "center", justifyContent: "center", width: "50px", height: "50px", borderRadius: "50%", background: "#fff", flexShrink: 0}}><img src="assets/img/logo/binja-movil.webp" alt="Binja Móvil" style={{height: "38px", width: "auto"}} /></span><span style={{fontWeight: 800, fontSize: "26px", color: "#fff", letterSpacing: "0.3px"}}>Binja Móvil</span></span>
                   </Link>
                 </div>
                 <div className="footer-content">
                   <p>
-                    We believe it has the power to do <br />
-                    amazing things.
+                    Conectividad híbrida para <br />
+                    cualquier entorno. Internet <br />
+                    que se mueve contigo.
                   </p>
-                  <span>Interested in working with us?</span> <br />
+                  <span>¿Interesado en trabajar con nosotros?</span> <br />
                   <a href="mailto:info@binjamovil.com" className="link">
                     info@binjamovil.com
                   </a>
                   <div className="social-icon d-flex align-items-center">
-                    <a href="#">
-                      <i className="fab fa-facebook-f" />
-                    </a>
-                    <a href="#">
-                      <i className="fab fa-twitter" />
-                    </a>
-                    <a href="#">
-                      <i className="fab fa-vimeo-v" />
-                    </a>
-                    <a href="#">
-                      <i className="fab fa-pinterest-p" />
+                    <a
+                      href="https://instagram.com/binjamovil"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <i className="fab fa-instagram" />
                     </a>
                   </div>
                 </div>
@@ -102,23 +98,23 @@ const Footer1 = () => {
             >
               <div className="single-footer-widget">
                 <div className="widget-head">
-                  <h5>Quick Links</h5>
+                  <h5>Enlaces rápidos</h5>
                 </div>
                 <ul className="list-items">
                   <li>
-                    <Link href="service-details">Services</Link>
+                    <Link href="soluciones">Soluciones</Link>
                   </li>
                   <li>
-                    <Link href="about">About company</Link>
+                    <Link href="equipos">Equipos</Link>
                   </li>
                   <li>
-                    <Link href="news-details">latest news</Link>
+                    <Link href="sectores">Sectores</Link>
                   </li>
                   <li>
-                    <Link href="team">team member</Link>
+                    <Link href="cobertura">Cobertura</Link>
                   </li>
                   <li>
-                    <Link href="testimonial">testimonials</Link>
+                    <Link href="contact">Contacto</Link>
                   </li>
                 </ul>
               </div>
@@ -129,23 +125,23 @@ const Footer1 = () => {
             >
               <div className="single-footer-widget">
                 <div className="widget-head">
-                  <h5>My account</h5>
+                  <h5>Compañía</h5>
                 </div>
                 <ul className="list-items">
                   <li>
-                    <Link href="contact">Forum Support</Link>
+                    <Link href="contact">Soporte Técnico</Link>
                   </li>
                   <li>
-                    <Link href="faq">Help &amp; FAQ</Link>
+                    <Link href="contact">Ayuda &amp; FAQ</Link>
                   </li>
                   <li>
-                    <Link href="contact">Contact Us</Link>
+                    <Link href="contact">Contáctanos</Link>
                   </li>
                   <li>
-                    <Link href="pricing">Pricing and plans</Link>
+                    <Link href="soluciones">Planes y Paquetes</Link>
                   </li>
                   <li>
-                    <Link href="contact">Cookies Policy</Link>
+                    <Link href="contact">Política de Cookies</Link>
                   </li>
                 </ul>
               </div>
@@ -156,14 +152,14 @@ const Footer1 = () => {
             >
               <div className="single-footer-widget">
                 <div className="widget-head">
-                  <h5>Address:</h5>
+                  <h5>Dirección:</h5>
                 </div>
                 <div className="footer-address-text">
-                  <p>570 8th Ave, New York,NY 10018 United States</p>
-                  <h5>Hours:</h5>
+                  <p>3er Ave. 306, Colonia Guerra, Guadalupe, Nuevo León, México</p>
+                  <h5>Horario:</h5>
                   <p>
-                    9.30am – 6.30pm <br />
-                    Monday to Friday
+                    9:30am – 6:30pm <br />
+                    Lunes a Viernes
                   </p>
                 </div>
               </div>
@@ -174,10 +170,10 @@ const Footer1 = () => {
             >
               <div className="single-footer-widget">
                 <div className="widget-head">
-                  <h5>Install app</h5>
+                  <h5>Descarga la app</h5>
                 </div>
                 <div className="footer-apps-items">
-                  <p>From App Store or Google Play</p>
+                  <p>Disponible en App Store y Google Play</p>
                   <div className="apps-image d-flex align-items-center">
                     <a href="#">
                       <img src="assets/img/app-store.png" alt="store-img" />
@@ -187,9 +183,9 @@ const Footer1 = () => {
                     </a>
                   </div>
                   <div className="support-text">
-                    <p>24/7 Support center</p>
+                    <p>Centro de soporte 24/7</p>
                     <h3>
-                      <a href="tel:+1718-904-4450">+1718-904-4450</a>
+                      <a href="tel:+23645689622">+236 (456) 896 22</a>
                     </h3>
                   </div>
                 </div>
@@ -202,21 +198,20 @@ const Footer1 = () => {
         <div className="container">
           <div className="footer-wrapper d-flex align-items-center justify-content-between">
             <p className="wow fadeInLeft color-2" data-wow-delay=".3s">
-              Copyright © 2024 <Link href="/">Modinatheme</Link>. All Rights
-              Reserved.
+              Copyright © 2026 <Link href="/">Binja Móvil</Link>. Todos los derechos reservados.
             </p>
             <ul className="footer-menu wow fadeInRight" data-wow-delay=".5s">
               <li>
-                <Link href="about">Company</Link>
+                <Link href="contact">Compañía</Link>
               </li>
               <li>
-                <Link href="contact">Support</Link>
+                <Link href="contact">Soporte</Link>
               </li>
               <li>
-                <Link href="contact">Privacy</Link>
+                <Link href="contact">Privacidad</Link>
               </li>
               <li>
-                <Link href="faq">Faqs</Link>
+                <Link href="contact">FAQs</Link>
               </li>
             </ul>
           </div>
@@ -242,30 +237,26 @@ const Footer2 = () => {
               <div className="single-footer-widget">
                 <div className="widget-head">
                   <Link href="/">
-                    <img src="assets/img/logo/binja-movil.webp" alt="Binja Móvil" style={{height: "60px", width: "auto"}} />
+                    <span style={{display: "inline-flex", alignItems: "center", gap: "12px"}}><span style={{display: "inline-flex", alignItems: "center", justifyContent: "center", width: "50px", height: "50px", borderRadius: "50%", background: "#fff", flexShrink: 0}}><img src="assets/img/logo/binja-movil.webp" alt="Binja Móvil" style={{height: "38px", width: "auto"}} /></span><span style={{fontWeight: 800, fontSize: "26px", color: "#fff", letterSpacing: "0.3px"}}>Binja Móvil</span></span>
                   </Link>
                 </div>
                 <div className="footer-content">
                   <p>
-                    We believe it has the power to do <br />
-                    amazing things.
+                    Conectividad híbrida para <br />
+                    cualquier entorno. Internet <br />
+                    que se mueve contigo.
                   </p>
-                  <span>Interested in working with us?</span> <br />
+                  <span>¿Interesado en trabajar con nosotros?</span> <br />
                   <a href="mailto:info@binjamovil.com" className="link">
                     info@binjamovil.com
                   </a>
                   <div className="social-icon d-flex align-items-center">
-                    <a href="#">
-                      <i className="fab fa-facebook-f" />
-                    </a>
-                    <a href="#">
-                      <i className="fab fa-twitter" />
-                    </a>
-                    <a href="#">
-                      <i className="fab fa-vimeo-v" />
-                    </a>
-                    <a href="#">
-                      <i className="fab fa-pinterest-p" />
+                    <a
+                      href="https://instagram.com/binjamovil"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <i className="fab fa-instagram" />
                     </a>
                   </div>
                 </div>
@@ -277,23 +268,23 @@ const Footer2 = () => {
             >
               <div className="single-footer-widget">
                 <div className="widget-head">
-                  <h5>Quick Links</h5>
+                  <h5>Enlaces rápidos</h5>
                 </div>
                 <ul className="list-items">
                   <li>
-                    <Link href="service-details">Services</Link>
+                    <Link href="soluciones">Soluciones</Link>
                   </li>
                   <li>
-                    <Link href="about">About company</Link>
+                    <Link href="equipos">Equipos</Link>
                   </li>
                   <li>
-                    <Link href="news-details">latest news</Link>
+                    <Link href="sectores">Sectores</Link>
                   </li>
                   <li>
-                    <Link href="team">team member</Link>
+                    <Link href="cobertura">Cobertura</Link>
                   </li>
                   <li>
-                    <Link href="testimonial">testimonials</Link>
+                    <Link href="contact">Contacto</Link>
                   </li>
                 </ul>
               </div>
@@ -304,23 +295,23 @@ const Footer2 = () => {
             >
               <div className="single-footer-widget">
                 <div className="widget-head">
-                  <h5>My account</h5>
+                  <h5>Compañía</h5>
                 </div>
                 <ul className="list-items">
                   <li>
-                    <Link href="contact">Forum Support</Link>
+                    <Link href="contact">Soporte Técnico</Link>
                   </li>
                   <li>
-                    <Link href="faq">Help &amp; FAQ</Link>
+                    <Link href="contact">Ayuda &amp; FAQ</Link>
                   </li>
                   <li>
-                    <Link href="contact">Contact Us</Link>
+                    <Link href="contact">Contáctanos</Link>
                   </li>
                   <li>
-                    <Link href="pricing">Pricing and plans</Link>
+                    <Link href="soluciones">Planes y Paquetes</Link>
                   </li>
                   <li>
-                    <Link href="contact">Cookies Policy</Link>
+                    <Link href="contact">Política de Cookies</Link>
                   </li>
                 </ul>
               </div>
@@ -331,14 +322,14 @@ const Footer2 = () => {
             >
               <div className="single-footer-widget">
                 <div className="widget-head">
-                  <h5>Address:</h5>
+                  <h5>Dirección:</h5>
                 </div>
                 <div className="footer-address-text">
-                  <p>570 8th Ave, New York,NY 10018 United States</p>
-                  <h5>Hours:</h5>
+                  <p>3er Ave. 306, Colonia Guerra, Guadalupe, Nuevo León, México</p>
+                  <h5>Horario:</h5>
                   <p>
-                    9.30am – 6.30pm <br />
-                    Monday to Friday
+                    9:30am – 6:30pm <br />
+                    Lunes a Viernes
                   </p>
                 </div>
               </div>
@@ -349,10 +340,10 @@ const Footer2 = () => {
             >
               <div className="single-footer-widget">
                 <div className="widget-head">
-                  <h5>Install app</h5>
+                  <h5>Descarga la app</h5>
                 </div>
                 <div className="footer-apps-items">
-                  <p>From App Store or Google Play</p>
+                  <p>Disponible en App Store y Google Play</p>
                   <div className="apps-image d-flex align-items-center">
                     <a href="#">
                       <img src="assets/img/app-store.png" alt="store-img" />
@@ -362,9 +353,9 @@ const Footer2 = () => {
                     </a>
                   </div>
                   <div className="support-text">
-                    <p>24/7 Support center</p>
+                    <p>Centro de soporte 24/7</p>
                     <h3>
-                      <a href="tel:+1718-904-4450">+1718-904-4450</a>
+                      <a href="tel:+23645689622">+236 (456) 896 22</a>
                     </h3>
                   </div>
                 </div>
@@ -377,21 +368,20 @@ const Footer2 = () => {
         <div className="container">
           <div className="footer-wrapper d-flex align-items-center justify-content-between">
             <p className="wow fadeInLeft color-2" data-wow-delay=".3s">
-              Copyright © 2024 <Link href="/">Modinatheme</Link>. All Rights
-              Reserved.
+              Copyright © 2026 <Link href="/">Binja Móvil</Link>. Todos los derechos reservados.
             </p>
             <ul className="footer-menu wow fadeInRight" data-wow-delay=".5s">
               <li>
-                <Link href="about">Company</Link>
+                <Link href="contact">Compañía</Link>
               </li>
               <li>
-                <Link href="contact">Support</Link>
+                <Link href="contact">Soporte</Link>
               </li>
               <li>
-                <Link href="contact">Privacy</Link>
+                <Link href="contact">Privacidad</Link>
               </li>
               <li>
-                <Link href="faq">Faqs</Link>
+                <Link href="contact">FAQs</Link>
               </li>
             </ul>
           </div>
@@ -411,7 +401,7 @@ const Footer3 = () => {
         <div className="footer-top">
           <div className="footer-logo wow fadeInUp" data-wow-delay=".3s">
             <Link href="/">
-              <img src="assets/img/logo/binja-movil.webp" alt="Binja Móvil" style={{height: "60px", width: "auto"}} />
+              <span style={{display: "inline-flex", alignItems: "center", gap: "12px"}}><span style={{display: "inline-flex", alignItems: "center", justifyContent: "center", width: "50px", height: "50px", borderRadius: "50%", background: "#fff", flexShrink: 0}}><img src="assets/img/logo/binja-movil.webp" alt="Binja Móvil" style={{height: "38px", width: "auto"}} /></span><span style={{fontWeight: 800, fontSize: "26px", color: "#fff", letterSpacing: "0.3px"}}>Binja Móvil</span></span>
             </Link>
           </div>
           <ul className="wow fadeInUp" data-wow-delay=".5s">
@@ -531,8 +521,7 @@ const Footer3 = () => {
         <div className="container">
           <div className="footer-wrapper d-flex align-items-center justify-content-between">
             <p className="wow fadeInUp color-2" data-wow-delay=".4s">
-              Copyright © 2024 <Link href="/">Modinatheme</Link>. All Rights
-              Reserved.
+              Copyright © 2026 <Link href="/">Binja Móvil</Link>. Todos los derechos reservados.
             </p>
           </div>
         </div>
@@ -603,8 +592,7 @@ const Footer4 = () => {
         </div>
         <div className="footer-bottom-4">
           <p className="wow fadeInUp text-center" data-wow-delay=".3s">
-            Copyright © 2024 <Link href="/">Modinatheme</Link>. All Rights
-            Reserved.
+            Copyright © 2026 <Link href="/">Binja Móvil</Link>. Todos los derechos reservados.
           </p>
         </div>
       </div>
