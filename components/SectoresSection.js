@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const sectores = [
   {
-    img: "vehiculos-campo.jpg",
+    img: "vehiculos.jpg",
     icon: "fas fa-satellite-dish",
     title: "Vehículos y equipos en campo",
     desc: "Conectividad móvil para unidades en ruta, cuadrillas, supervisión y operación en campo.",
@@ -15,25 +15,25 @@ const sectores = [
     desc: "Conectividad rápida para eventos, ferias, pop-ups, staff, producción y puntos de venta móviles.",
   },
   {
-    img: "home-office.jpg",
+    img: "homeoffice.jpg",
     icon: "fas fa-wifi",
     title: "Home Office Confiable",
     desc: "Conectividad móvil de respaldo para colaboradores, videollamadas, sistemas y trabajo remoto.",
   },
   {
-    img: "obras-construccion.jpg",
+    img: "obras.jpg",
     icon: "fas fa-hard-hat",
     title: "Obras y construcción",
     desc: "Internet confiable para construcción, casetas, proyectos temporales y equipos de trabajo.",
   },
   {
-    img: "hotspots.jpg",
+    img: "flotillas.jpg",
     icon: "fas fa-wifi",
     title: "Hotspots para equipos y flotillas",
     desc: "MiFi, routers móviles y equipos administrados para conectar laptops, tablets y dispositivos.",
   },
   {
-    img: "punto-venta.jpg",
+    img: "foodtruck.jpg",
     icon: "fas fa-store",
     title: "Punto de venta y food trucks",
     desc: "Conectividad para food trucks, puestos móviles y puntos de venta con terminal y cobro digital.",
@@ -60,7 +60,7 @@ const SectoresSection = () => {
             <div className="col-lg-4 col-md-6" key={i}>
               <Link href="contact" className="binja-sector-card">
                 <div className="binja-sector-card__img">
-                  <img src={`assets/img/sectores/${s.img}`} alt={s.title} />
+                  <img src={`assets/img/solutions/${s.img}`} alt={s.title} />
                 </div>
                 <div className="binja-sector-card__body">
                   <div className="binja-sector-card__heading">

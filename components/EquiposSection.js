@@ -6,27 +6,27 @@ const tabs = [
     key: "routers",
     label: "Routers",
     products: [
-      { img: "router-1.jpg", name: "CSG m106 Pro - Router 4G Portátil" },
-      { img: "router-2.jpg", name: "Katalyst Spark 5G - Router Empresarial" },
-      { img: "router-3.jpg", name: "InHand CR202 Lite - Router 4G LTE CAT6 con WiFi" },
+      { img: "router-portatil.jpg", name: "CSG m106 Pro - Router 4G Portátil" },
+      { img: "router-rugged.jpg", name: "Katalyst Spark 5G - Router Empresarial" },
+      { img: "mifi-hotspot.jpg", name: "InHand CR202 Lite - Router 4G LTE CAT6 con WiFi" },
     ],
   },
   {
     key: "amplificadores",
     label: "Amplificadores de Señal",
     products: [
-      { img: "amp-1.jpg", name: "Antena Direccional de Alto Rendimiento" },
-      { img: "amp-2.jpg", name: "Kit de Antenas para Router 4G/5G" },
-      { img: "amp-3.jpg", name: "Amplificador de Señal Celular M2M" },
+      { img: "antena-exterior.jpg", name: "Antena Direccional de Alto Rendimiento" },
+      { img: "antena-exterior.jpg", name: "Kit de Antenas para Router 4G/5G" },
+      { img: "mifi-hotspot.jpg", name: "Amplificador de Señal Celular M2M" },
     ],
   },
   {
     key: "rugged",
     label: "Equipos Rugged",
     products: [
-      { img: "rugged-1.jpg", name: "Katalyst Spark 5G - Router Industrial Rugged" },
-      { img: "rugged-2.jpg", name: "CSG m106 Pro - Router 4G para Campo" },
-      { img: "rugged-3.jpg", name: "InHand CR202 Lite - Router Resistente a Golpes" },
+      { img: "router-rugged.jpg", name: "Katalyst Spark 5G - Router Industrial Rugged" },
+      { img: "router-portatil.jpg", name: "CSG m106 Pro - Router 4G para Campo" },
+      { img: "router-rugged.jpg", name: "InHand CR202 Lite - Router Resistente a Golpes" },
     ],
   },
 ];

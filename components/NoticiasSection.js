@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const articulos = [
   {
-    img: "noticia-1.jpg",
+    img: "02-evento.jpg",
     category: "Tecnología",
     title: "Starlink V3: más capacidad y menor latencia",
     date: "Junio 15, 2025",
@@ -12,7 +12,7 @@ const articulos = [
       "La nueva generación de satélites Starlink V3 promete más de 10 veces el ancho de banda de V2, mayor capacidad total de red y una reducción importante en la latencia mínima.",
   },
   {
-    img: "noticia-2.jpg",
+    img: "03-flotilla.jpg",
     category: "Industria",
     title: "5G llega a carreteras rurales: ¿qué significa para flotillas?",
     date: "Junio 10, 2025",
@@ -21,7 +21,7 @@ const articulos = [
       "Las nuevas bandas de espectro habilitadas por el IFT permitirán cobertura 5G en carreteras secundarias, beneficiando a empresas de logística y transporte.",
   },
   {
-    img: "noticia-3.jpg",
+    img: "01-construccion.jpg",
     category: "Negocios",
     title: "El internet híbrido se consolida como estándar en construcción",
     date: "Junio 5, 2025",
@@ -51,7 +51,7 @@ const NoticiasSection = () => {
             <div className="col-lg-4 col-md-6" key={i}>
               <article className="binja-noticia-card">
                 <div className="binja-noticia-card__img">
-                  <img src={`assets/img/noticias/${a.img}`} alt={a.title} />
+                  <img src={`assets/img/casos/${a.img}`} alt={a.title} />
                   <span className="binja-noticia-card__badge">{a.category}</span>
                 </div>
                 <div className="binja-noticia-card__body">
