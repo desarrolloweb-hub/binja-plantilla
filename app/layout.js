@@ -9,6 +9,7 @@ import "@css/nice-select.css";
 import "@css/main.css";
 import "./globals.css";
 import Preloader from "@/layouts/Preloader";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 export const metadata = {
   title: "Binja Móvil - Internet y Telefonía",
@@ -26,7 +27,8 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <Preloader />
-        {children}</body>
+        {children}
+        <WhatsAppButton /></body>
     </html>
   );
 }

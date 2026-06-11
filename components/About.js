@@ -156,8 +156,8 @@ const About = () => {
                             <div className="content">
                               <p>Phone:</p>
                               <h6>
-                                <a href="tel:++23645689622">
-                                  +236 (456) 896 22
+                                <a href="https://wa.me/529215417921" target="_blank" rel="noopener noreferrer">
+                                  +52 921 541 7921
                                 </a>
                               </h6>
                             </div>
@@ -215,8 +215,8 @@ const About = () => {
                             <div className="content">
                               <p>Phone:</p>
                               <h6>
-                                <a href="tel:++23645689622">
-                                  +236 (456) 896 22
+                                <a href="https://wa.me/529215417921" target="_blank" rel="noopener noreferrer">
+                                  +52 921 541 7921
                                 </a>
                               </h6>
                             </div>
@@ -274,8 +274,8 @@ const About = () => {
                             <div className="content">
                               <p>Phone:</p>
                               <h6>
-                                <a href="tel:++23645689622">
-                                  +236 (456) 896 22
+                                <a href="https://wa.me/529215417921" target="_blank" rel="noopener noreferrer">
+                                  +52 921 541 7921
                                 </a>
                               </h6>
                             </div>
