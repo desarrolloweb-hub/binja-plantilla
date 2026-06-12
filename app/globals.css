@@ -832,35 +832,98 @@
 /* Product card */
 .binja-equipo-card {
   background: #fff;
+  border: 1px solid #eee;
+  border-radius: 18px;
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+.binja-equipo-card:hover {
+  transform: translateY(-8px);
+  border-color: transparent;
+  box-shadow: 0 26px 50px rgba(0, 0, 0, 0.12);
 }
 .binja-equipo-card__img {
   background: #f4f5f7;
-  border-radius: 14px;
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 4 / 3;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  margin-bottom: 20px;
-  transition: box-shadow 0.3s ease, transform 0.3s ease;
-}
-.binja-equipo-card:hover .binja-equipo-card__img {
-  transform: translateY(-5px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
 }
 .binja-equipo-card__img img {
-  width: 78%;
-  height: 78%;
+  width: 70%;
+  height: 70%;
   object-fit: contain;
+  transition: transform 0.4s ease;
+}
+.binja-equipo-card:hover .binja-equipo-card__img img {
+  transform: scale(1.06);
+}
+.binja-equipo-card__body {
+  padding: 22px 22px 24px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.binja-equipo-card__specs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+.binja-equipo-card__specs span {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  color: #e21d1d;
+  background: #fde8e8;
+  padding: 4px 10px;
+  border-radius: 20px;
 }
 .binja-equipo-card__name {
   font-family: "Manrope", "Inter", sans-serif;
   font-size: 17px;
-  font-weight: 700;
+  font-weight: 800;
   color: #111;
   text-transform: none !important;
-  margin: 0;
-  line-height: 1.35;
+  margin: 0 0 8px;
+  line-height: 1.3;
+}
+.binja-equipo-card__desc {
+  font-size: 14px;
+  line-height: 1.55;
+  color: #666;
+  margin: 0 0 18px;
+  flex: 1;
+}
+.binja-equipo-card__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  align-self: flex-start;
+  background: #f4f4f5;
+  color: #111;
+  font-family: "Manrope", "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 10px 20px;
+  border-radius: 9px;
+  text-decoration: none;
+  transition: background 0.25s ease, color 0.25s ease, gap 0.25s ease;
+}
+.binja-equipo-card__btn i {
+  font-size: 11px;
+  transition: transform 0.25s ease;
+}
+.binja-equipo-card__btn:hover {
+  background: #e21d1d;
+  color: #fff;
+}
+.binja-equipo-card__btn:hover i {
+  transform: translateX(3px);
 }
 
 /* Bottom features */

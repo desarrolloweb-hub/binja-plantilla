@@ -6,27 +6,72 @@ const tabs = [
     key: "routers",
     label: "Routers",
     products: [
-      { img: "router-portatil.jpg", name: "CSG m106 Pro - Router 4G Portátil" },
-      { img: "router-rugged.jpg", name: "Katalyst Spark 5G - Router Empresarial" },
-      { img: "mifi-hotspot.jpg", name: "InHand CR202 Lite - Router 4G LTE CAT6 con WiFi" },
+      {
+        img: "router-portatil.jpg",
+        name: "CSG m106 Pro - Router 4G Portátil",
+        desc: "Compacto y plug-and-play para conectar tu equipo en minutos.",
+        specs: ["4G LTE", "WiFi", "Portátil"],
+      },
+      {
+        img: "router-rugged.jpg",
+        name: "Katalyst Spark 5G - Router Empresarial",
+        desc: "Alto rendimiento para operaciones que exigen máxima velocidad.",
+        specs: ["5G", "Multi-SIM", "Empresarial"],
+      },
+      {
+        img: "mifi-hotspot.jpg",
+        name: "InHand CR202 Lite - Router 4G LTE CAT6 con WiFi",
+        desc: "Conectividad confiable con WiFi integrado para varios dispositivos.",
+        specs: ["LTE CAT6", "WiFi", "Compacto"],
+      },
     ],
   },
   {
     key: "amplificadores",
     label: "Amplificadores de Señal",
     products: [
-      { img: "antena-exterior.jpg", name: "Antena Direccional de Alto Rendimiento" },
-      { img: "antena-exterior.jpg", name: "Kit de Antenas para Router 4G/5G" },
-      { img: "mifi-hotspot.jpg", name: "Amplificador de Señal Celular M2M" },
+      {
+        img: "antena-exterior.jpg",
+        name: "Antena Direccional de Alto Rendimiento",
+        desc: "Enfoca la señal hacia la torre para máxima cobertura en zonas lejanas.",
+        specs: ["Exterior", "Direccional", "Alta ganancia"],
+      },
+      {
+        img: "antena-exterior.jpg",
+        name: "Kit de Antenas para Router 4G/5G",
+        desc: "Mejora la recepción de tu router en sitios con señal débil.",
+        specs: ["4G/5G", "Kit completo", "Fácil instalación"],
+      },
+      {
+        img: "mifi-hotspot.jpg",
+        name: "Amplificador de Señal Celular M2M",
+        desc: "Refuerza la conexión de equipos IoT y M2M en campo.",
+        specs: ["M2M / IoT", "Multibanda", "Estable"],
+      },
     ],
   },
   {
     key: "rugged",
     label: "Equipos Rugged",
     products: [
-      { img: "router-rugged.jpg", name: "Katalyst Spark 5G - Router Industrial Rugged" },
-      { img: "router-portatil.jpg", name: "CSG m106 Pro - Router 4G para Campo" },
-      { img: "router-rugged.jpg", name: "InHand CR202 Lite - Router Resistente a Golpes" },
+      {
+        img: "router-rugged.jpg",
+        name: "Katalyst Spark 5G - Router Industrial Rugged",
+        desc: "Resistente a polvo, agua y vibración para entornos industriales.",
+        specs: ["IP67", "5G", "Industrial"],
+      },
+      {
+        img: "router-portatil.jpg",
+        name: "CSG m106 Pro - Router 4G para Campo",
+        desc: "Pensado para obra y campo, soporta condiciones exigentes.",
+        specs: ["4G", "Robusto", "Campo"],
+      },
+      {
+        img: "router-rugged.jpg",
+        name: "InHand CR202 Lite - Router Resistente a Golpes",
+        desc: "Carcasa reforzada para operación continua en exteriores.",
+        specs: ["Anti-golpes", "LTE", "Exterior"],
+      },
     ],
   },
 ];
@@ -87,12 +132,32 @@ const EquiposSection = () => {
 
         <div className="row g-4">
           {current.products.map((p, i) => (
-            <div className="col-lg-4 col-md-6" key={i}>
+            <div className="col-lg-4 col-md-6" key={`${active}-${i}`}>
               <div className="binja-equipo-card">
                 <div className="binja-equipo-card__img">
                   <img src={`assets/img/equipos/${p.img}`} alt={p.name} />
                 </div>
-                <h3 className="binja-equipo-card__name">{p.name}</h3>
+                <div className="binja-equipo-card__body">
+                  {p.specs && (
+                    <div className="binja-equipo-card__specs">
+                      {p.specs.map((s, j) => (
+                        <span key={j}>{s}</span>
+                      ))}
+                    </div>
+                  )}
+                  <h3 className="binja-equipo-card__name">{p.name}</h3>
+                  {p.desc && (
+                    <p className="binja-equipo-card__desc">{p.desc}</p>
+                  )}
+                  <a
+                    href="https://wa.me/529215417921"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="binja-equipo-card__btn"
+                  >
+                    Cotizar <i className="fas fa-chevron-right" />
+                  </a>
+                </div>
               </div>
             </div>
           ))}
