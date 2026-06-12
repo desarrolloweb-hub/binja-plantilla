@@ -10,6 +10,7 @@ import "@css/main.css";
 import "./globals.css";
 import Preloader from "@/layouts/Preloader";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import CookieConsent from "@/components/CookieConsent";
 
 export const metadata = {
   title: "Binja Móvil - Internet y Telefonía",
@@ -28,7 +29,8 @@ export default function RootLayout({ children }) {
       <body>
         <Preloader />
         {children}
-        <WhatsAppButton /></body>
+        <WhatsAppButton />
+        <CookieConsent /></body>
     </html>
   );
 }

@@ -141,7 +141,7 @@ const Footer1 = () => {
                     <Link href="soluciones">Planes y Paquetes</Link>
                   </li>
                   <li>
-                    <Link href="contact">Política de Cookies</Link>
+                    <Link href="privacy">Política de Cookies</Link>
                   </li>
                 </ul>
               </div>
@@ -208,7 +208,7 @@ const Footer1 = () => {
                 <Link href="contact">Soporte</Link>
               </li>
               <li>
-                <Link href="contact">Privacidad</Link>
+                <Link href="privacy">Privacidad</Link>
               </li>
               <li>
                 <Link href="contact">FAQs</Link>
@@ -311,7 +311,7 @@ const Footer2 = () => {
                     <Link href="soluciones">Planes y Paquetes</Link>
                   </li>
                   <li>
-                    <Link href="contact">Política de Cookies</Link>
+                    <Link href="privacy">Política de Cookies</Link>
                   </li>
                 </ul>
               </div>
@@ -378,7 +378,7 @@ const Footer2 = () => {
                 <Link href="contact">Soporte</Link>
               </li>
               <li>
-                <Link href="contact">Privacidad</Link>
+                <Link href="privacy">Privacidad</Link>
               </li>
               <li>
                 <Link href="contact">FAQs</Link>
