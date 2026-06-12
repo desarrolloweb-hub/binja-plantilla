@@ -6,7 +6,7 @@ const navItems = [
   { id: 1, href: "soluciones", title: "Soluciones" },
   { id: 2, href: "equipos", title: "Equipos" },
   { id: 3, href: "sectores", title: "Sectores" },
-  { id: 4, href: "contacto", title: "Contacto" },
+  { id: 4, href: "contact", title: "Contacto" },
 ];
 
 const Menus = ({ single, menus }) => {
@@ -16,7 +16,7 @@ const Menus = ({ single, menus }) => {
         { id: 1, href: "soluciones", title: "Soluciones" },
         { id: 2, href: "tecnologia", title: "Tecnología" },
         { id: 3, href: "cobertura", title: "Cobertura" },
-        { id: 4, href: "contacto", title: "Contacto" },
+        { id: 4, href: "contact", title: "Contacto" },
       ];
   return (
     <nav id="mobile-menu" className="d-none d-xl-block">
@@ -57,7 +57,7 @@ export const MobileMenu = ({ menus, single }) => {
         { id: 1, href: "soluciones", title: "Soluciones" },
         { id: 2, href: "tecnologia", title: "Tecnología" },
         { id: 3, href: "cobertura", title: "Cobertura" },
-        { id: 4, href: "contacto", title: "Contacto" },
+        { id: 4, href: "contact", title: "Contacto" },
       ];
   return (
     <nav className="mean-nav d-block d-xl-none">

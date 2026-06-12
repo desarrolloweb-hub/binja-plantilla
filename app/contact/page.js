@@ -1,196 +1,182 @@
-import Breadcrumb from "@/components/Breadcrumb";
 import NetBandLayout from "@/layouts/NetBandLayout";
+
+const infoCards = [
+  {
+    icon: "fab fa-whatsapp",
+    label: "WhatsApp",
+    value: "+52 921 541 7921",
+    href: "https://wa.me/529215417921",
+    external: true,
+  },
+  {
+    icon: "far fa-envelope",
+    label: "Correo",
+    value: "info@binjamovil.com",
+    href: "mailto:info@binjamovil.com",
+    external: false,
+  },
+  {
+    icon: "fas fa-map-marker-alt",
+    label: "Dirección",
+    value: "3er Ave. 306, Col. Guerra, Guadalupe, NL",
+    href: "https://maps.google.com/?q=3er+Ave+306+Colonia+Guerra+Guadalupe+Nuevo+Leon",
+    external: true,
+  },
+  {
+    icon: "far fa-clock",
+    label: "Horario",
+    value: "Lun a Vie · 9:30am – 6:30pm",
+    href: null,
+    external: false,
+  },
+];
+
 const page = () => {
   return (
-    <NetBandLayout>
-      <Breadcrumb pageTitle={"Contact Us"} />
-      {/*<< Contact Section Start >>*/}
-      <section className="contact-main-area fix section-padding">
+    <NetBandLayout header={1}>
+      {/* Hero */}
+      <section className="binja-contact-hero">
+        <div className="binja-contact-hero__overlay" />
+        <div className="container binja-contact-hero__content">
+          <span className="binja-contact-hero__label">CONTACTO</span>
+          <h1 className="binja-contact-hero__title">Hablemos de tu conexión</h1>
+          <p className="binja-contact-hero__desc">
+            Cuéntanos sobre tu operación y te ayudamos a encontrar la solución de
+            conectividad ideal para tu negocio, flota o sitio remoto.
+          </p>
+        </div>
+      </section>
+
+      {/* Info + Formulario */}
+      <section className="binja-contact-section">
         <div className="container">
-          <div className="contact-main-wrapper">
-            <div className="row g-4">
-              <div className="col-lg-6">
-                <div className="contact-content">
-                  <div className="section-title mb-2">
-                    <span className="wow fadeInUp">Get In Touch</span>
-                    <h2 className="wow fadeInUp" data-wow-delay=".3s">
-                      Contact Us
-                    </h2>
-                  </div>
-                  <p className="mt-4 mt-md-0 wow fadeInUp" data-wow-delay=".4s">
-                    Sed ut perspiciatis unde omnis iste natus error sit
-                    voluptatem accusantium doloremque laudantium, totam rem
-                    aperiam, eaque inventore
-                  </p>
-                  <div className="row g-4 mt-3">
-                    <div className="col-lg-6 wow fadeInUp" data-wow-delay=".3s">
-                      <div className="info-items">
-                        <div className="icon">
-                          <i className="fas fa-map-marker-alt" />
-                        </div>
-                        <div className="content">
-                          <h5>Location</h5>
-                          <p>
-                            3er Ave. 306, Col. Guerra, <br />
-                            Guadalupe, NL
-                          </p>
-                        </div>
+          <div className="row g-5">
+            {/* Columna info */}
+            <div className="col-lg-5">
+              <span className="binja-contact-eyebrow">ESTAMOS PARA AYUDARTE</span>
+              <h2 className="binja-contact-title">
+                Ponte en contacto con Binja Móvil
+              </h2>
+              <p className="binja-contact-subtitle">
+                Respondemos rápido. Escríbenos por el canal que prefieras y un
+                asesor te atenderá.
+              </p>
+
+              <div className="binja-contact-info">
+                {infoCards.map((c, i) => {
+                  const inner = (
+                    <>
+                      <div className="binja-contact-info__icon">
+                        <i className={c.icon} />
                       </div>
-                    </div>
-                    <div className="col-lg-6 wow fadeInUp" data-wow-delay=".5s">
-                      <div className="info-items">
-                        <div className="icon">
-                          <i className="far fa-phone" />
-                        </div>
-                        <div className="content">
-                          <h5>Phone</h5>
-                          <a href="tel:+09354587874">+09 354 587 874 </a> <br />
-                          <a href="tel:+01368567894">+01 368 567 894</a>
-                        </div>
+                      <div className="binja-contact-info__text">
+                        <span>{c.label}</span>
+                        <p>{c.value}</p>
                       </div>
+                    </>
+                  );
+                  return c.href ? (
+                    <a
+                      key={i}
+                      className="binja-contact-info__item"
+                      href={c.href}
+                      {...(c.external
+                        ? { target: "_blank", rel: "noopener noreferrer" }
+                        : {})}
+                    >
+                      {inner}
+                    </a>
+                  ) : (
+                    <div key={i} className="binja-contact-info__item">
+                      {inner}
                     </div>
-                    <div className="col-lg-6 wow fadeInUp" data-wow-delay=".7s">
-                      <div className="info-items">
-                        <div className="icon">
-                          <i className="fal fa-envelope" />
-                        </div>
-                        <div className="content">
-                          <h5>Email</h5>
-                          <a href="mailto:info@binjamovil.com" className="link">
-                            info@binjamovil.com
-                          </a>{" "}
-                          <br />
-                          <a href="mailto:info@binjamovil.com" className="link">
-                            info@binjamovil.com
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col-lg-6 wow fadeInUp" data-wow-delay=".9s">
-                      <div className="info-items">
-                        <div className="icon">
-                          <i className="fad fa-share-alt" />
-                        </div>
-                        <div className="content">
-                          <h5>Social</h5>
-                          <div className="social-icon d-flex align-items-center">
-                            <a href="#">
-                              <i className="fab fa-facebook-f" />
-                            </a>
-                            <a href="#">
-                              <i className="fab fa-twitter" />
-                            </a>
-                            <a href="#">
-                              <i className="fab fa-vimeo-v" />
-                            </a>
-                            <a href="#">
-                              <i className="fab fa-pinterest-p" />
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    className="contact-image wow fadeInUp"
-                    data-wow-delay=".4s"
-                  >
-                    <img src="assets/img/contact.jpg" alt="img" />
-                  </div>
-                </div>
+                  );
+                })}
               </div>
-              <div className="col-lg-6 mt-5 mt-lg-0">
-                <div className="contact-form-items">
-                  <div className="contact-title">
-                    <h3 className="wow fadeInUp" data-wow-delay=".3s">
-                      Fill Up The Form
-                    </h3>
-                    <p className="wow fadeInUp" data-wow-delay=".5s">
-                      Your email address will not be published. Required fields
-                      are marked *
-                    </p>
-                  </div>
-                  <form action="contact.php" id="contact-form" method="POST">
-                    <div className="row g-4">
-                      <div
-                        className="col-lg-12 wow fadeInUp"
-                        data-wow-delay=".3s"
-                      >
-                        <div className="form-clt">
-                          <input
-                            type="text"
-                            name="name"
-                            id="name"
-                            placeholder="Your Name*"
-                          />
-                          <div className="icon">
-                            <i className="fal fa-user" />
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        className="col-lg-12 wow fadeInUp"
-                        data-wow-delay=".5s"
-                      >
-                        <div className="form-clt">
-                          <input
-                            type="text"
-                            name="email"
-                            id="email"
-                            placeholder="Email Address*"
-                          />
-                          <div className="icon">
-                            <i className="fal fa-envelope" />
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        className="col-lg-12 wow fadeInUp"
-                        data-wow-delay=".7s"
-                      >
-                        <div className="form-clt">
-                          <textarea
-                            name="message"
-                            id="message"
-                            placeholder="Enter Your Messege here"
-                            defaultValue={""}
-                          />
-                          <div className="icon">
-                            <i className="fal fa-edit" />
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        className="col-lg-6 wow fadeInUp"
-                        data-wow-delay=".8s"
-                      >
-                        <button type="submit" className="theme-btn">
-                          <span>
-                            <i className="fal fa-paper-plane" />
-                            Get In Touch
-                          </span>
-                        </button>
-                      </div>
+
+              <div className="binja-contact-social">
+                <a
+                  href="https://instagram.com/binjamovil"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Instagram"
+                >
+                  <i className="fab fa-instagram" />
+                </a>
+              </div>
+            </div>
+
+            {/* Columna formulario */}
+            <div className="col-lg-7">
+              <div className="binja-contact-form-box">
+                <h3>Envíanos un mensaje</h3>
+                <form className="binja-contact-form">
+                  <div className="row g-3">
+                    <div className="col-md-6">
+                      <input type="text" placeholder="Nombre completo" required />
                     </div>
-                  </form>
-                </div>
+                    <div className="col-md-6">
+                      <input type="tel" placeholder="Teléfono / WhatsApp" />
+                    </div>
+                    <div className="col-md-6">
+                      <input type="email" placeholder="Correo electrónico" required />
+                    </div>
+                    <div className="col-md-6">
+                      <input type="text" placeholder="Empresa (opcional)" />
+                    </div>
+                    <div className="col-12">
+                      <select defaultValue="" required>
+                        <option value="" disabled>
+                          ¿Qué solución te interesa?
+                        </option>
+                        <option>Internet Satelital</option>
+                        <option>Móvil 4G/5G</option>
+                        <option>Solución Híbrida</option>
+                        <option>SIMs M2M / IoT</option>
+                        <option>Equipos / Routers</option>
+                        <option>Otra</option>
+                      </select>
+                    </div>
+                    <div className="col-12">
+                      <textarea
+                        rows={5}
+                        placeholder="Cuéntanos sobre tu proyecto u operación..."
+                      />
+                    </div>
+                    <div className="col-12">
+                      <button type="submit" className="binja-contact-submit">
+                        Enviar mensaje <i className="fas fa-chevron-right" />
+                      </button>
+                    </div>
+                  </div>
+                </form>
               </div>
             </div>
           </div>
         </div>
       </section>
-      {/*<< Map Section Start >>*/}
-      <div className="map-section">
-        <div className="google-map wow fadeInUp" data-wow-delay=".7s">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6678.7619084840835!2d144.9618311901502!3d-37.81450084255415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642b4758afc1d%3A0x3119cc820fdfc62e!2sEnvato!5e0!3m2!1sen!2sbd!4v1641984054261!5m2!1sen!2sbd"
-            style={{ border: 0 }}
-            allowFullScreen=""
-            loading="lazy"
-          />
+
+      {/* CTA WhatsApp */}
+      <section className="binja-contact-cta">
+        <div className="container">
+          <div className="binja-contact-cta__box">
+            <div>
+              <h2>¿Prefieres una respuesta inmediata?</h2>
+              <p>Escríbenos por WhatsApp y te atendemos al instante.</p>
+            </div>
+            <a
+              href="https://wa.me/529215417921"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="binja-contact-cta__btn"
+            >
+              <i className="fab fa-whatsapp" /> Escríbenos por WhatsApp
+            </a>
+          </div>
         </div>
-      </div>
+      </section>
     </NetBandLayout>
   );
 };
+
 export default page;
