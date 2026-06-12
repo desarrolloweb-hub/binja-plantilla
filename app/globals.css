@@ -1754,54 +1754,93 @@
   margin: 0;
 }
 
-/* Fuentes / referencias */
+/* Fuentes / referencias (compactas) */
 .amplimax-sources {
   margin-top: 40px;
-  padding: 24px 30px;
-  background: #f8f8f9;
-  border: 1px solid #eee;
-  border-left: 4px solid #e21d1d;
-  border-radius: 12px;
-}
-.amplimax-sources__title {
   display: flex;
   align-items: center;
-  gap: 8px;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+.amplimax-sources__label {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
   font-family: "Manrope", "Inter", sans-serif;
   font-weight: 700;
-  font-size: 15px;
-  color: #111;
-  margin: 0 0 14px;
-}
-.amplimax-sources__title i {
-  color: #22c55e;
-  font-size: 16px;
-}
-.amplimax-sources__list {
-  margin: 0;
-  padding-left: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-.amplimax-sources__list li {
   font-size: 14px;
-  line-height: 1.5;
-  color: #666;
-}
-.amplimax-sources__list li span {
-  font-weight: 700;
   color: #111;
 }
-.amplimax-sources__list a {
-  color: #e21d1d;
-  font-weight: 600;
-  text-decoration: none;
-  transition: color 0.2s ease;
+.amplimax-sources__label i {
+  color: #22c55e;
+  font-size: 15px;
 }
-.amplimax-sources__list a:hover {
-  color: #a51d1d;
-  text-decoration: underline;
+.amplimax-sources__pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.amplimax-source-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: #fff;
+  border: 1px solid #e6e6e8;
+  border-radius: 30px;
+  padding: 9px 16px;
+  font-size: 13.5px;
+  color: #555;
+  text-decoration: none;
+  transition: border-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+}
+.amplimax-source-pill strong {
+  color: #e21d1d;
+  font-weight: 700;
+}
+.amplimax-source-pill i {
+  font-size: 11px;
+  opacity: 0.6;
+}
+.amplimax-source-pill:hover {
+  border-color: #e21d1d;
+  color: #111;
+  box-shadow: 0 6px 16px rgba(226, 29, 29, 0.12);
+}
+
+/* Puente hacia la solución */
+.amplimax-bridge {
+  margin-top: 50px;
+  text-align: center;
+}
+.amplimax-bridge i {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #fde8e8;
+  color: #e21d1d;
+  font-size: 16px;
+  margin-bottom: 16px;
+  animation: amplimax-bounce 1.8s infinite;
+}
+.amplimax-bridge p {
+  font-family: "Manrope", "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #111;
+  max-width: 620px;
+  margin: 0 auto;
+}
+.amplimax-bridge p strong {
+  color: #e21d1d;
+  font-weight: 800;
+}
+@keyframes amplimax-bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(6px); }
 }
 
 /* Transmite (lista de íconos) */

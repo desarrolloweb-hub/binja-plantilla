@@ -182,43 +182,40 @@ const page = () => {
           </div>
 
           <div className="amplimax-sources">
-            <p className="amplimax-sources__title">
-              <i className="fas fa-circle-check" /> Datos respaldados por
-              fuentes oficiales
-            </p>
-            <ol className="amplimax-sources__list">
-              <li>
-                <span>INEGI</span> – Censo Agropecuario 2022:{" "}
-                <a
-                  href="https://www.inegi.org.mx/programas/ca/2022/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Ver aquí
-                </a>
-              </li>
-              <li>
-                <span>SADER</span> – Reporte de Pérdidas en Sinaloa:{" "}
-                <a
-                  href="https://www.gob.mx/agricultura"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Consultar
-                </a>
-              </li>
-              <li>
-                <span>CIMMYT</span> – Impacto de Plagas en Michoacán:{" "}
-                <a
-                  href="https://www.cimmyt.org/es/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Leer estudio
-                </a>
-              </li>
-            </ol>
+            <span className="amplimax-sources__label">
+              <i className="fas fa-circle-check" /> Fuentes oficiales:
+            </span>
+            <div className="amplimax-sources__pills">
+              <a
+                href="https://www.inegi.org.mx/programas/ca/2022/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="amplimax-source-pill"
+              >
+                <strong>INEGI</strong> Censo Agropecuario 2022
+                <i className="fas fa-arrow-up-right-from-square" />
+              </a>
+              <a
+                href="https://www.gob.mx/agricultura"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="amplimax-source-pill"
+              >
+                <strong>SADER</strong> Pérdidas en Sinaloa
+                <i className="fas fa-arrow-up-right-from-square" />
+              </a>
+              <a
+                href="https://www.cimmyt.org/es/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="amplimax-source-pill"
+              >
+                <strong>CIMMYT</strong> Plagas en Michoacán
+                <i className="fas fa-arrow-up-right-from-square" />
+              </a>
+            </div>
           </div>
+
         </div>
       </section>
 
