@@ -309,17 +309,20 @@ const page = () => {
               en zonas remotas.
             </p>
           </div>
-          <div className="row g-4">
+          <div className="amplimax-flow">
             {pilares.map((p, i) => (
-              <div className="col-lg-4 col-md-6" key={i}>
-                <div className="amplimax-pilar">
-                  <span className="amplimax-pilar__num">{p.num}</span>
-                  <div className="amplimax-pilar__icon">
-                    <i className={p.icon} />
-                  </div>
-                  <h3>{p.title}</h3>
-                  <p>{p.desc}</p>
+              <div className="amplimax-flow__step" key={i}>
+                <div className="amplimax-flow__circle">
+                  <i className={p.icon} />
+                  <span className="amplimax-flow__num">{p.num}</span>
                 </div>
+                <h3>{p.title}</h3>
+                <p>{p.desc}</p>
+                {i < pilares.length - 1 && (
+                  <div className="amplimax-flow__connector">
+                    <i className="fas fa-chevron-right" />
+                  </div>
+                )}
               </div>
             ))}
           </div>
@@ -349,23 +352,27 @@ const page = () => {
       <section className="amplimax-cta">
         <div className="container">
           <div className="amplimax-cta__box">
-            <h2>¿Listo para conectar tu operación agrícola?</h2>
-            <p>
-              Si ya usas tecnología agrícola pero el costo de la conectividad te
-              limita, Amplimax es tu solución para tener internet en el campo.
-            </p>
-            <div className="amplimax-cta__buttons">
-              <Link href="contact" className="amplimax-btn">
-                Agenda consultoría <i className="fas fa-chevron-right" />
-              </Link>
-              <a
-                href="https://wa.me/529215417921"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="amplimax-btn amplimax-btn--white"
-              >
-                <i className="fab fa-whatsapp" /> +52 921 541 7921
-              </a>
+            <div className="amplimax-cta__glow" />
+            <div className="amplimax-cta__inner">
+              <h2>¿Listo para conectar tu operación agrícola?</h2>
+              <p>
+                Si ya usas tecnología agrícola pero el costo de la conectividad
+                te limita, Amplimax es tu solución para tener internet en el
+                campo.
+              </p>
+              <div className="amplimax-cta__buttons">
+                <Link href="contact" className="amplimax-btn">
+                  Agenda consultoría <i className="fas fa-chevron-right" />
+                </Link>
+                <a
+                  href="https://wa.me/529215417921"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="amplimax-btn amplimax-btn--white"
+                >
+                  <i className="fab fa-whatsapp" /> +52 921 541 7921
+                </a>
+              </div>
             </div>
           </div>
         </div>

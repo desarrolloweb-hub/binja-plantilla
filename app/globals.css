@@ -1924,57 +1924,120 @@
   margin: 0 auto;
 }
 
-/* Pilares */
-.amplimax-pilar {
+/* Flujo conectado (Tecnología → Conectividad → Integración) */
+.amplimax-flow {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.amplimax-flow__step {
   position: relative;
-  background: #fff;
-  border-radius: 16px;
-  padding: 32px 28px;
-  height: 100%;
-  overflow: hidden;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  flex: 1;
+  text-align: center;
+  padding: 0 22px;
 }
-.amplimax-pilar:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 22px 45px rgba(0, 0, 0, 0.12);
-}
-.amplimax-pilar__num {
-  position: absolute;
-  top: 14px;
-  right: 22px;
-  font-family: "Manrope", "Inter", sans-serif;
-  font-size: 58px;
-  font-weight: 800;
-  color: rgba(226, 29, 29, 0.07);
-  line-height: 1;
-}
-.amplimax-pilar__icon {
-  width: 56px;
-  height: 56px;
+.amplimax-flow__circle {
+  position: relative;
+  width: 96px;
+  height: 96px;
+  margin: 0 auto 24px;
   border-radius: 50%;
-  background: #fde8e8;
+  background: #fff;
+  border: 2px solid #fde0e0;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 18px;
+  box-shadow: 0 12px 30px rgba(226, 29, 29, 0.12);
+  transition: transform 0.3s ease, background 0.3s ease, border-color 0.3s ease;
 }
-.amplimax-pilar__icon i {
+.amplimax-flow__circle i {
+  font-size: 34px;
   color: #e21d1d;
-  font-size: 22px;
+  transition: color 0.3s ease;
 }
-.amplimax-pilar h3 {
+.amplimax-flow__step:hover .amplimax-flow__circle {
+  transform: translateY(-6px);
+  background: #e21d1d;
+  border-color: #e21d1d;
+}
+.amplimax-flow__step:hover .amplimax-flow__circle i {
+  color: #fff;
+}
+.amplimax-flow__num {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #111;
+  color: #fff;
+  font-family: "Manrope", "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid #f4f5f7;
+}
+.amplimax-flow__step h3 {
   font-family: "Manrope", "Inter", sans-serif;
   font-size: 21px;
   font-weight: 800;
   color: #111;
   margin: 0 0 10px;
 }
-.amplimax-pilar p {
+.amplimax-flow__step p {
   font-size: 14.5px;
   line-height: 1.6;
   color: #666;
   margin: 0;
+  max-width: 240px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Conector entre pasos */
+.amplimax-flow__connector {
+  position: absolute;
+  top: 38px;
+  right: -16px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #fff;
+  border: 1px solid #f0d5d5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #e21d1d;
+  font-size: 13px;
+  z-index: 2;
+}
+/* Línea punteada de fondo que une los círculos */
+.amplimax-flow__step:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 48px;
+  left: calc(50% + 60px);
+  right: calc(-50% + 60px);
+  border-top: 2px dashed #f0d5d5;
+  z-index: 0;
+}
+@media (max-width: 767px) {
+  .amplimax-flow {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .amplimax-flow__step:not(:last-child)::after { display: none; }
+  .amplimax-flow__connector {
+    top: auto;
+    bottom: -34px;
+    right: 50%;
+    transform: translateX(50%) rotate(90deg);
+  }
 }
 
 /* Compatibles (chips) */
@@ -2007,10 +2070,44 @@
   padding: 80px 0;
 }
 .amplimax-cta__box {
-  background: #0c1117;
-  border-radius: 22px;
-  padding: 60px 40px;
+  position: relative;
+  background: linear-gradient(160deg, #141a24 0%, #0a0e14 100%);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 24px;
+  padding: 64px 40px;
   text-align: center;
+  overflow: hidden;
+}
+.amplimax-cta__glow {
+  position: absolute;
+  top: -120px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 520px;
+  height: 320px;
+  background: radial-gradient(
+    circle,
+    rgba(226, 29, 29, 0.35) 0%,
+    transparent 65%
+  );
+  pointer-events: none;
+}
+.amplimax-cta__inner {
+  position: relative;
+  z-index: 2;
+}
+.amplimax-cta__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 18px;
+  background: #e21d1d;
+  color: #fff;
+  font-size: 26px;
+  margin-bottom: 24px;
+  box-shadow: 0 12px 30px rgba(226, 29, 29, 0.5);
 }
 .amplimax-cta__box h2 {
   font-family: "Manrope", "Inter", sans-serif;
@@ -2018,14 +2115,15 @@
   font-weight: 800;
   letter-spacing: -1px;
   color: #fff;
+  text-transform: none !important;
   margin: 0 0 16px;
 }
 .amplimax-cta__box p {
   font-size: 16px;
   line-height: 1.65;
   color: rgba(255, 255, 255, 0.8);
-  max-width: 620px;
-  margin: 0 auto 30px;
+  max-width: 580px;
+  margin: 0 auto 32px;
 }
 .amplimax-cta__buttons {
   display: flex;
