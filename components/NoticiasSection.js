@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const articulos = [
   {
-    img: "02-evento.jpg",
+    img: "/noticias/noticia1.webp",
     category: "Tecnología",
     title: "Starlink V3: más capacidad y menor latencia",
     date: "Junio 15, 2025",
@@ -51,7 +51,10 @@ const NoticiasSection = () => {
             <div className="col-lg-4 col-md-6" key={i}>
               <article className="binja-noticia-card">
                 <div className="binja-noticia-card__img">
-                  <img src={`assets/img/casos/${a.img}`} alt={a.title} />
+                  <img
+                    src={a.img.startsWith("/") ? a.img : `assets/img/casos/${a.img}`}
+                    alt={a.title}
+                  />
                   <span className="binja-noticia-card__badge">{a.category}</span>
                 </div>
                 <div className="binja-noticia-card__body">

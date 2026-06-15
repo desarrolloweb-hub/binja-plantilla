@@ -1386,10 +1386,31 @@
 .binja-noticia-card:hover .binja-noticia-card__img img {
   transform: scale(1.06);
 }
+.binja-noticia-card__img::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 35%,
+    rgba(0, 0, 0, 0.55) 100%
+  );
+  pointer-events: none;
+  transition: background 0.4s ease;
+  z-index: 1;
+}
+.binja-noticia-card:hover .binja-noticia-card__img::after {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.1) 25%,
+    rgba(0, 0, 0, 0.65) 100%
+  );
+}
 .binja-noticia-card__badge {
   position: absolute;
   top: 16px;
   left: 16px;
+  z-index: 2;
   background: #e21d1d;
   color: #fff;
   font-size: 12px;
