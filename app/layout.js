@@ -17,9 +17,9 @@ export const metadata = {
   description:
     "Binja Móvil — Soluciones de internet y telefonía para hogares y negocios.",
   icons: {
-    icon: "/favicon.png",
-    shortcut: "/favicon.png",
-    apple: "/favicon.png",
+    icon: "/favicon2.png",
+    shortcut: "/favicon2.png",
+    apple: "/favicon2.png",
   },
 };
 
