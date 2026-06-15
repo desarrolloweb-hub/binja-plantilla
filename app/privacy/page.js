@@ -20,11 +20,11 @@ const secciones = [
           <a href="mailto:info@binjamovil.com">info@binjamovil.com</a> o al
           WhatsApp{" "}
           <a
-            href="https://wa.me/529215417921"
+            href="https://wa.me/525665938841"
             target="_blank"
             rel="noopener noreferrer"
           >
-            +52 921 541 7921
+            +52 56 6593 8841
           </a>
           .
         </p>

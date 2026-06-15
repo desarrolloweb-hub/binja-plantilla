@@ -4,8 +4,8 @@ const infoCards = [
   {
     icon: "fab fa-whatsapp",
     label: "WhatsApp",
-    value: "+52 921 541 7921",
-    href: "https://wa.me/529215417921",
+    value: "+52 56 6593 8841",
+    href: "https://wa.me/525665938841",
     external: true,
   },
   {
@@ -165,7 +165,7 @@ const page = () => {
               <p>Escríbenos por WhatsApp y te atendemos al instante.</p>
             </div>
             <a
-              href="https://wa.me/529215417921"
+              href="https://wa.me/525665938841"
               target="_blank"
               rel="noopener noreferrer"
               className="binja-contact-cta__btn"

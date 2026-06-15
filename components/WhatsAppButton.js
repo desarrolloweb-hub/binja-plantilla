@@ -1,7 +1,7 @@
 "use client";
 
 const WhatsAppButton = () => {
-  const phone = "529215417921"; // sin signos ni espacios
+  const phone = "525665938841"; // sin signos ni espacios
   const message = encodeURIComponent(
     "Hola, me interesa conocer más sobre las soluciones de Binja Móvil."
   );

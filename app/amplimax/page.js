@@ -97,7 +97,7 @@ const page = () => {
                   Solicitar información <i className="fas fa-chevron-right" />
                 </Link>
                 <a
-                  href="https://wa.me/529215417921"
+                  href="https://wa.me/525665938841"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="amplimax-btn amplimax-btn--ghost"
@@ -362,12 +362,12 @@ const page = () => {
                   Agenda consultoría <i className="fas fa-chevron-right" />
                 </Link>
                 <a
-                  href="https://wa.me/529215417921"
+                  href="https://wa.me/525665938841"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="amplimax-btn amplimax-btn--white"
                 >
-                  <i className="fab fa-whatsapp" /> +52 921 541 7921
+                  <i className="fab fa-whatsapp" /> +52 56 6593 8841
                 </a>
               </div>
             </div>

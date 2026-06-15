@@ -116,13 +116,13 @@ const Header1 = ({ openSidebar, single, menus }) => {
                   </div>
                 </div>
                 <div className="header-right d-flex justify-content-end align-items-center">
-                  <a href="https://wa.me/529215417921" target="_blank" rel="noopener noreferrer" className="binja-phone">
+                  <a href="https://wa.me/525665938841" target="_blank" rel="noopener noreferrer" className="binja-phone">
                     <div className="binja-phone__icon">
                       <i className="fab fa-whatsapp" />
                     </div>
                     <div className="binja-phone__content">
                       <p>WHATSAPP:</p>
-                      <h6>+52 921 541 7921</h6>
+                      <h6>+52 56 6593 8841</h6>
                     </div>
                   </a>
                   <div className="header-button">

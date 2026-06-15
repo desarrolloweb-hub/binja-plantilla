@@ -150,7 +150,7 @@ const EquiposSection = () => {
                     <p className="binja-equipo-card__desc">{p.desc}</p>
                   )}
                   <a
-                    href="https://wa.me/529215417921"
+                    href="https://wa.me/525665938841"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="binja-equipo-card__btn"

@@ -36,7 +36,7 @@ const ContactSection = () => {
                     <div className="content">
                       <p>Call For Inquiry</p>
                       <h3>
-                        <a href="https://wa.me/529215417921" target="_blank" rel="noopener noreferrer">+52 921 541 7921</a>
+                        <a href="https://wa.me/525665938841" target="_blank" rel="noopener noreferrer">+52 56 6593 8841</a>
                       </h3>
                     </div>
                   </div>
