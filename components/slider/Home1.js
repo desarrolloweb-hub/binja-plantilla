@@ -1,13 +1,32 @@
 "use client";
 import Link from "next/link";
+import { useEffect, useState } from "react";
+
+const heroImages = [
+  "assets/img/hero/binja-hero.jpg",
+  "carrusel/carrusel1.webp",
+];
 
 const Home1 = () => {
+  const [active, setActive] = useState(0);
+
+  useEffect(() => {
+    if (heroImages.length < 2) return;
+    const id = setInterval(() => {
+      setActive((prev) => (prev + 1) % heroImages.length);
+    }, 4000);
+    return () => clearInterval(id);
+  }, []);
+
   return (
     <section className="binja-hero">
-      <div
-        className="binja-hero__bg"
-        style={{ backgroundImage: 'url("assets/img/hero/binja-hero.jpg")' }}
-      />
+      {heroImages.map((img, i) => (
+        <div
+          key={img}
+          className={`binja-hero__bg${i === active ? " is-active" : ""}`}
+          style={{ backgroundImage: `url("${img}")` }}
+        />
+      ))}
       <div className="binja-hero__overlay" />
 
       <div className="container binja-hero__content">
