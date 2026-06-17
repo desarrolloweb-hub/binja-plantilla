@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { useState } from "react";
 
 const tabs = [
@@ -43,10 +44,12 @@ const tabs = [
         specs: ["4G/5G", "Kit completo", "Fácil instalación"],
       },
       {
-        img: "mifi-hotspot.jpg",
-        name: "Amplificador de Señal Celular M2M",
-        desc: "Refuerza la conexión de equipos IoT y M2M en campo.",
-        specs: ["M2M / IoT", "Multibanda", "Estable"],
+        img: "antena-exterior.jpg",
+        name: "Amplimax 4G - Antena Amplificadora de Largo Alcance",
+        desc: "Antenas integradas 4G/3G/2G con hasta 30 km de alcance para conectar sensores, drones e IoT en zonas remotas.",
+        specs: ["30 km alcance", "4G/3G/2G", "IoT"],
+        link: "amplimax",
+        fit: "cover",
       },
     ],
   },
@@ -131,11 +134,17 @@ const EquiposSection = () => {
         </div>
 
         <div className="row g-4">
-          {current.products.map((p, i) => (
-            <div className="col-lg-4 col-md-6" key={`${active}-${i}`}>
-              <div className="binja-equipo-card">
+          {current.products.map((p, i) => {
+            const cardInner = (
+              <>
                 <div className="binja-equipo-card__img">
-                  <img src={`assets/img/equipos/${p.img}`} alt={p.name} />
+                  <img
+                    src={`assets/img/equipos/${p.img}`}
+                    alt={p.name}
+                    className={
+                      p.fit === "cover" ? "is-cover" : undefined
+                    }
+                  />
                 </div>
                 <div className="binja-equipo-card__body">
                   {p.specs && (
@@ -149,18 +158,33 @@ const EquiposSection = () => {
                   {p.desc && (
                     <p className="binja-equipo-card__desc">{p.desc}</p>
                   )}
+                  <span className="binja-equipo-card__btn">
+                    {p.link ? "Conocer más" : "Cotizar"}
+                    <i className="fas fa-chevron-right" />
+                  </span>
+                </div>
+              </>
+            );
+
+            return (
+              <div className="col-lg-4 col-md-6" key={`${active}-${i}`}>
+                {p.link ? (
+                  <Link href={p.link} className="binja-equipo-card">
+                    {cardInner}
+                  </Link>
+                ) : (
                   <a
                     href="https://wa.me/525665938841"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="binja-equipo-card__btn"
+                    className="binja-equipo-card"
                   >
-                    Cotizar <i className="fas fa-chevron-right" />
+                    {cardInner}
                   </a>
-                </div>
+                )}
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
 
         <div className="binja-equipos__features">
