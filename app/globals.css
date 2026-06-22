@@ -2590,6 +2590,394 @@ a.binja-contact-info__item:hover {
 }
 
 /* ======================================================
+   Página de Soporte Técnico
+   ====================================================== */
+.binja-soporte-canales {
+  background: #f4f5f7;
+  padding: 70px 0;
+}
+.binja-soporte-canales__head {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto 44px;
+}
+.binja-soporte-canal {
+  height: 100%;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 18px;
+  padding: 34px 28px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+.binja-soporte-canal:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.09);
+  border-color: #f3c9c9;
+}
+.binja-soporte-canal__icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: #fde8e8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.binja-soporte-canal__icon i {
+  font-size: 26px;
+  color: #e21d1d;
+}
+.binja-soporte-canal h3 {
+  font-family: "Manrope", "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  color: #111;
+  margin: 0 0 8px;
+}
+.binja-soporte-canal p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #666;
+  margin: 0 0 20px;
+}
+.binja-soporte-canal__value {
+  font-family: "Manrope", "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #e21d1d;
+  margin-top: auto;
+}
+.binja-soporte-canal__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  margin-top: auto;
+  background: #e21d1d;
+  color: #fff;
+  font-family: "Manrope", "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  padding: 12px 24px;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: background 0.25s ease, transform 0.25s ease;
+}
+.binja-soporte-canal__btn:hover {
+  background: #a51d1d;
+  color: #fff;
+  transform: translateY(-2px);
+}
+.binja-soporte-canal__btn--ghost {
+  background: #f1f2f4;
+  color: #111;
+}
+.binja-soporte-canal__btn--ghost:hover {
+  background: #e7e8ea;
+  color: #111;
+}
+
+/* Pasos para levantar un ticket */
+.binja-soporte-pasos {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  margin: 28px 0 8px;
+}
+.binja-soporte-paso {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+.binja-soporte-paso__num {
+  flex-shrink: 0;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #e21d1d;
+  color: #fff;
+  font-family: "Manrope", "Inter", sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.binja-soporte-paso h4 {
+  font-family: "Manrope", "Inter", sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  color: #111;
+  margin: 4px 0 4px;
+}
+.binja-soporte-paso p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #666;
+  margin: 0;
+}
+.binja-soporte-nota {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  background: #fff6e9;
+  border: 1px solid #f5dcb3;
+  border-radius: 12px;
+  padding: 16px 18px;
+  margin-top: 26px;
+}
+.binja-soporte-nota i {
+  color: #d98a00;
+  font-size: 18px;
+  margin-top: 2px;
+}
+.binja-soporte-nota p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.55;
+  color: #6b5526;
+}
+
+/* FAQ Primeros pasos */
+.binja-soporte-faq {
+  background: #fff;
+  padding: 80px 0;
+}
+.binja-soporte-faq__head {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto 40px;
+}
+.binja-soporte-faq__wrap {
+  max-width: 820px;
+  margin: 0 auto;
+}
+@media (max-width: 767px) {
+  .binja-soporte-canales { padding: 50px 0; }
+  .binja-soporte-faq { padding: 56px 0; }
+}
+
+/* ======================================================
+   Soluciones — índice e interiores
+   ====================================================== */
+/* Índice /soluciones */
+.binja-sol-index {
+  background: #fff;
+  padding: 80px 0;
+}
+.binja-sol-index__head {
+  text-align: center;
+  max-width: 680px;
+  margin: 0 auto 48px;
+}
+
+/* Hero interior */
+.binja-sol-hero {
+  position: relative;
+  min-height: 460px;
+  display: flex;
+  align-items: flex-end;
+  padding: 0 0 56px;
+  overflow: hidden;
+  background: #0c1117;
+}
+.binja-sol-hero__bg {
+  position: absolute;
+  inset: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+}
+.binja-sol-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(12, 17, 23, 0.55) 0%,
+    rgba(12, 17, 23, 0.92) 100%
+  );
+}
+.binja-sol-hero__content {
+  position: relative;
+  z-index: 2;
+  max-width: 760px;
+}
+.binja-sol-hero__label {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  color: #ff3535;
+  font-family: "Manrope", "Inter", sans-serif;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.binja-sol-hero__title {
+  font-family: "Manrope", "Inter", sans-serif;
+  font-size: clamp(32px, 4.2vw, 52px);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -1.5px;
+  color: #fff;
+  margin-bottom: 16px;
+}
+.binja-sol-hero__desc {
+  font-size: 17px;
+  line-height: 1.65;
+  color: rgba(255, 255, 255, 0.82);
+  max-width: 620px;
+  margin: 0 0 28px;
+}
+.binja-sol-hero__buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+.binja-sol-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #e21d1d;
+  color: #fff;
+  font-family: "Manrope", "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  padding: 14px 28px;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: background 0.25s ease, transform 0.25s ease;
+}
+.binja-sol-btn:hover {
+  background: #a51d1d;
+  color: #fff;
+  transform: translateY(-3px);
+}
+.binja-sol-btn--ghost {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+.binja-sol-btn--ghost:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Intro */
+.binja-sol-intro {
+  background: #fff;
+  padding: 80px 0;
+}
+.binja-sol-intro__img {
+  border-radius: 18px;
+  overflow: hidden;
+  height: 100%;
+  min-height: 320px;
+}
+.binja-sol-intro__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.binja-sol-intro p {
+  font-size: 16.5px;
+  line-height: 1.75;
+  color: #555;
+}
+
+/* Beneficios */
+.binja-sol-benefits {
+  background: #f4f5f7;
+  padding: 80px 0;
+}
+.binja-sol-benefits__head {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 44px;
+}
+.binja-sol-benefit {
+  height: 100%;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 16px;
+  padding: 32px 26px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.binja-sol-benefit:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.08);
+}
+.binja-sol-benefit__icon {
+  width: 58px;
+  height: 58px;
+  border-radius: 14px;
+  background: #fde8e8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+}
+.binja-sol-benefit__icon i {
+  font-size: 24px;
+  color: #e21d1d;
+}
+.binja-sol-benefit h3 {
+  font-family: "Manrope", "Inter", sans-serif;
+  font-size: 19px;
+  font-weight: 800;
+  color: #111;
+  margin: 0 0 8px;
+}
+.binja-sol-benefit p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #666;
+  margin: 0;
+}
+
+/* Ideal para */
+.binja-sol-ideal {
+  background: #fff;
+  padding: 80px 0;
+}
+.binja-sol-ideal__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-top: 8px;
+}
+.binja-sol-ideal__item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: #f8f8f9;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 16px 20px;
+  font-family: "Manrope", "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #111;
+}
+.binja-sol-ideal__item i {
+  color: #e21d1d;
+  font-size: 18px;
+}
+@media (max-width: 767px) {
+  .binja-sol-hero { min-height: 380px; padding-bottom: 40px; }
+  .binja-sol-intro,
+  .binja-sol-benefits,
+  .binja-sol-ideal,
+  .binja-sol-index { padding: 56px 0; }
+  .binja-sol-ideal__list { grid-template-columns: 1fr; }
+}
+
+/* ======================================================
    Página legal (Política de Privacidad)
    ====================================================== */
 .binja-legal-hero {

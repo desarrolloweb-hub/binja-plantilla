@@ -1,44 +1,6 @@
 "use client";
 import Link from "next/link";
-
-const sectores = [
-  {
-    img: "vehiculos.jpg",
-    icon: "fas fa-satellite-dish",
-    title: "Vehículos y equipos en campo",
-    desc: "Conectividad móvil para unidades en ruta, cuadrillas, supervisión y operación en campo.",
-  },
-  {
-    img: "eventos.jpg",
-    icon: "fas fa-calendar-alt",
-    title: "Eventos y sitios temporales",
-    desc: "Conectividad rápida para eventos, ferias, pop-ups, staff, producción y puntos de venta móviles.",
-  },
-  {
-    img: "homeoffice.jpg",
-    icon: "fas fa-wifi",
-    title: "Home Office",
-    desc: "Conectividad móvil de respaldo para colaboradores, videollamadas, sistemas y trabajo remoto.",
-  },
-  {
-    img: "obras.jpg",
-    icon: "fas fa-hard-hat",
-    title: "Obras y construcción",
-    desc: "Internet confiable para construcción, casetas, proyectos temporales y equipos de trabajo.",
-  },
-  {
-    img: "flotillas.jpg",
-    icon: "fas fa-wifi",
-    title: "Hotspots para equipos y flotillas",
-    desc: "MiFi, routers móviles y equipos administrados para conectar laptops, tablets y dispositivos.",
-  },
-  {
-    img: "foodtruck.jpg",
-    icon: "fas fa-store",
-    title: "Punto de venta y food trucks",
-    desc: "Conectividad para food trucks, puestos móviles y puntos de venta con terminal y cobro digital.",
-  },
-];
+import { soluciones } from "@/data/soluciones";
 
 const SectoresSection = () => {
   return (
@@ -56,9 +18,12 @@ const SectoresSection = () => {
         </div>
 
         <div className="row g-4">
-          {sectores.map((s, i) => (
-            <div className="col-lg-4 col-md-6" key={i}>
-              <Link href="contacto" className="binja-sector-card">
+          {soluciones.map((s) => (
+            <div className="col-lg-4 col-md-6" key={s.slug}>
+              <Link
+                href={`/soluciones/${s.slug}`}
+                className="binja-sector-card"
+              >
                 <div className="binja-sector-card__img">
                   <img src={`assets/img/solutions/${s.img}`} alt={s.title} />
                 </div>
@@ -72,7 +37,7 @@ const SectoresSection = () => {
                       <i className="fas fa-chevron-right" />
                     </span>
                   </div>
-                  <p>{s.desc}</p>
+                  <p>{s.shortDesc}</p>
                 </div>
               </Link>
             </div>

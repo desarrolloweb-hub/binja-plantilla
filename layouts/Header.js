@@ -86,10 +86,10 @@ const Header1 = ({ openSidebar, single, menus }) => {
               </div>
               <ul className="header-menu">
                 <li>
-                  <Link href="contacto">Soporte Técnico</Link>
+                  <Link href="/contacto">Soporte Técnico</Link>
                 </li>
                 <li>
-                  <Link href="cobertura">Cobertura</Link>
+                  <Link href="/cobertura">Cobertura</Link>
                 </li>
               </ul>
             </div>
@@ -104,7 +104,7 @@ const Header1 = ({ openSidebar, single, menus }) => {
                 <div className="header-left">
                   <div className="logo">
                     <Link href="/" className="header-logo">
-                      <span style={{display: "inline-flex", alignItems: "center", gap: "10px"}}><img src="assets/img/logo/binja-movil.webp" alt="Binja Móvil" style={{height: "50px", width: "auto"}} /><span style={{fontWeight: 700, fontSize: "22px", color: "#d62828", letterSpacing: "0.5px"}}>Binja Móvil</span></span>
+                      <span style={{display: "inline-flex", alignItems: "center", gap: "10px"}}><img src="/assets/img/logo/binja-movil.webp" alt="Binja Móvil" style={{height: "50px", width: "auto"}} /><span style={{fontWeight: 700, fontSize: "22px", color: "#d62828", letterSpacing: "0.5px"}}>Binja Móvil</span></span>
                     </Link>
                   </div>
                 </div>
@@ -127,7 +127,7 @@ const Header1 = ({ openSidebar, single, menus }) => {
                   </a>
                   <div className="header-button">
                     <Link
-                      href="contacto"
+                      href="/contacto"
                       className="binja-cta"
                       style={{
                         display: "inline-block",
@@ -200,7 +200,7 @@ const Header2 = ({ openSidebar, single, menus }) => {
               <div className="header-left">
                 <div className="logo">
                   <Link href="/" className="header-logo">
-                    <span style={{display: "inline-flex", alignItems: "center", gap: "10px"}}><img src="assets/img/logo/binja-movil.webp" alt="Binja Móvil" style={{height: "50px", width: "auto"}} /><span style={{fontWeight: 700, fontSize: "22px", color: "#d62828", letterSpacing: "0.5px"}}>Binja Móvil</span></span>
+                    <span style={{display: "inline-flex", alignItems: "center", gap: "10px"}}><img src="/assets/img/logo/binja-movil.webp" alt="Binja Móvil" style={{height: "50px", width: "auto"}} /><span style={{fontWeight: 700, fontSize: "22px", color: "#d62828", letterSpacing: "0.5px"}}>Binja Móvil</span></span>
                   </Link>
                 </div>
               </div>
@@ -214,7 +214,7 @@ const Header2 = ({ openSidebar, single, menus }) => {
                   <div className="cart-box">
                     <ul>
                       <li>
-                        <img src="assets/img/shop/cart-2.jpg" alt="image" />
+                        <img src="/assets/img/shop/cart-2.jpg" alt="image" />
                         <div className="cart-product">
                           <a href="#0">Wi-Fi Router</a>
                           <span>168$</span>
@@ -223,7 +223,7 @@ const Header2 = ({ openSidebar, single, menus }) => {
                     </ul>
                     <ul>
                       <li className="border-none">
-                        <img src="assets/img/shop/cart-3.jpg" alt="image" />
+                        <img src="/assets/img/shop/cart-3.jpg" alt="image" />
                         <div className="cart-product">
                           <a href="#0">TV Box</a>
                           <span>198$</span>
@@ -249,7 +249,7 @@ const Header2 = ({ openSidebar, single, menus }) => {
                 </div>
 
                 <div className="header-button">
-                  <Link href="contacto" className="theme-btn">
+                  <Link href="/contacto" className="theme-btn">
                     <span>
                       Agenda consultoría
                       <i className="fas fa-chevron-right" />
@@ -284,7 +284,7 @@ const Header3 = ({ openSidebar, single, menus }) => {
               <ul className="contact-list">
                 <li>
                   <span>Call</span>Consult With It Advisor?{" "}
-                  <Link href="contacto">Click Now</Link>
+                  <Link href="/contacto">Click Now</Link>
                 </li>
                 <li>
                   <i className="fas fa-map-marker-alt" />
@@ -302,7 +302,7 @@ const Header3 = ({ openSidebar, single, menus }) => {
               <NiceSelect customClass="style-2" />
               <div className="flag-wrap">
                 <div className="flag">
-                  <img src="assets/img/flag.png" alt="flag" />
+                  <img src="/assets/img/flag.png" alt="flag" />
                 </div>
                 <NiceSelect
                   customClass=""
@@ -330,7 +330,7 @@ const Header3 = ({ openSidebar, single, menus }) => {
               <div className="header-main">
                 <div className="logo">
                   <Link href="/" className="header-logo">
-                    <span style={{display: "inline-flex", alignItems: "center", gap: "10px"}}><img src="assets/img/logo/binja-movil.webp" alt="Binja Móvil" style={{height: "50px", width: "auto"}} /><span style={{fontWeight: 700, fontSize: "22px", color: "#d62828", letterSpacing: "0.5px"}}>Binja Móvil</span></span>
+                    <span style={{display: "inline-flex", alignItems: "center", gap: "10px"}}><img src="/assets/img/logo/binja-movil.webp" alt="Binja Móvil" style={{height: "50px", width: "auto"}} /><span style={{fontWeight: 700, fontSize: "22px", color: "#d62828", letterSpacing: "0.5px"}}>Binja Móvil</span></span>
                   </Link>
                 </div>
                 <div className="header-left">
@@ -342,7 +342,7 @@ const Header3 = ({ openSidebar, single, menus }) => {
                 </div>
                 <div className="header-right d-flex justify-content-end align-items-center">
                   <div className="header-button">
-                    <Link href="contacto" className="theme-btn theme-btn-2">
+                    <Link href="/contacto" className="theme-btn theme-btn-2">
                       <span>
                         Agenda consultoría
                         <i className="fas fa-chevron-right" />
@@ -380,10 +380,10 @@ const Header4 = ({ openSidebar, single, menus }) => {
             <div className="header-left">
               <div className="logo">
                 <Link href="/" className="header-logo">
-                  <span style={{display: "inline-flex", alignItems: "center", gap: "10px"}}><img src="assets/img/logo/binja-movil.webp" alt="Binja Móvil" style={{height: "50px", width: "auto"}} /><span style={{fontWeight: 700, fontSize: "22px", color: "#d62828", letterSpacing: "0.5px"}}>Binja Móvil</span></span>
+                  <span style={{display: "inline-flex", alignItems: "center", gap: "10px"}}><img src="/assets/img/logo/binja-movil.webp" alt="Binja Móvil" style={{height: "50px", width: "auto"}} /><span style={{fontWeight: 700, fontSize: "22px", color: "#d62828", letterSpacing: "0.5px"}}>Binja Móvil</span></span>
                 </Link>
                 <Link href="/" className="header-logo-2">
-                  <span style={{display: "inline-flex", alignItems: "center", gap: "10px"}}><img src="assets/img/logo/binja-movil.webp" alt="Binja Móvil" style={{height: "50px", width: "auto"}} /><span style={{fontWeight: 700, fontSize: "22px", color: "#d62828", letterSpacing: "0.5px"}}>Binja Móvil</span></span>
+                  <span style={{display: "inline-flex", alignItems: "center", gap: "10px"}}><img src="/assets/img/logo/binja-movil.webp" alt="Binja Móvil" style={{height: "50px", width: "auto"}} /><span style={{fontWeight: 700, fontSize: "22px", color: "#d62828", letterSpacing: "0.5px"}}>Binja Móvil</span></span>
                 </Link>
               </div>
             </div>
@@ -395,7 +395,7 @@ const Header4 = ({ openSidebar, single, menus }) => {
             <div className="header-right d-flex justify-content-end align-items-center">
 
               <div className="header-button">
-                <Link href="contacto" className="theme-btn">
+                <Link href="/contacto" className="theme-btn">
                   <span>
                     Agenda consultoría
                     <i className="fas fa-chevron-right" />

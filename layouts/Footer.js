@@ -23,10 +23,10 @@ const Footer1 = () => {
           <div className="col-lg-7">
             <div className="newsletter-area">
               <div className="shape-1">
-                <img src="assets/img/footer-shape.png" alt="shape-img" />
+                <img src="/assets/img/footer-shape.png" alt="shape-img" />
               </div>
               <div className="shape-2">
-                <img src="assets/img/footer-shape-2.png" alt="shape-img" />
+                <img src="/assets/img/footer-shape-2.png" alt="shape-img" />
               </div>
               <div className="newsletter-title">
                 <h2 className="wow fadeInUp" data-wow-delay=".3s">
@@ -67,7 +67,7 @@ const Footer1 = () => {
               <div className="single-footer-widget">
                 <div className="widget-head">
                   <Link href="/">
-                    <span style={{display: "inline-flex", alignItems: "center", gap: "12px"}}><span style={{display: "inline-flex", alignItems: "center", justifyContent: "center", width: "50px", height: "50px", borderRadius: "50%", background: "#fff", flexShrink: 0}}><img src="assets/img/logo/binja-movil.webp" alt="Binja Móvil" style={{height: "38px", width: "auto"}} /></span><span style={{fontWeight: 800, fontSize: "26px", color: "#fff", letterSpacing: "0.3px"}}>Binja Móvil</span></span>
+                    <span style={{display: "inline-flex", alignItems: "center", gap: "12px"}}><span style={{display: "inline-flex", alignItems: "center", justifyContent: "center", width: "50px", height: "50px", borderRadius: "50%", background: "#fff", flexShrink: 0}}><img src="/assets/img/logo/binja-movil.webp" alt="Binja Móvil" style={{height: "38px", width: "auto"}} /></span><span style={{fontWeight: 800, fontSize: "26px", color: "#fff", letterSpacing: "0.3px"}}>Binja Móvil</span></span>
                   </Link>
                 </div>
                 <div className="footer-content">
@@ -102,19 +102,19 @@ const Footer1 = () => {
                 </div>
                 <ul className="list-items">
                   <li>
-                    <Link href="soluciones">Soluciones</Link>
+                    <Link href="/soluciones">Soluciones</Link>
                   </li>
                   <li>
-                    <Link href="equipos">Equipos</Link>
+                    <Link href="/equipos">Equipos</Link>
                   </li>
                   <li>
-                    <Link href="sectores">Sectores</Link>
+                    <Link href="/sectores">Sectores</Link>
                   </li>
                   <li>
-                    <Link href="cobertura">Cobertura</Link>
+                    <Link href="/cobertura">Cobertura</Link>
                   </li>
                   <li>
-                    <Link href="contacto">Contacto</Link>
+                    <Link href="/contacto">Contacto</Link>
                   </li>
                 </ul>
               </div>
@@ -129,19 +129,19 @@ const Footer1 = () => {
                 </div>
                 <ul className="list-items">
                   <li>
-                    <Link href="contacto">Soporte Técnico</Link>
+                    <Link href="/soporte">Soporte Técnico</Link>
                   </li>
                   <li>
-                    <Link href="aviso-privacidad">Aviso de Privacidad</Link>
+                    <Link href="/aviso-privacidad">Aviso de Privacidad</Link>
                   </li>
                   <li>
-                    <Link href="terminos-condiciones">Términos y Condiciones</Link>
+                    <Link href="/terminos-condiciones">Términos y Condiciones</Link>
                   </li>
                   <li>
-                    <Link href="codigo-etica">Código de Ética</Link>
+                    <Link href="/codigo-etica">Código de Ética</Link>
                   </li>
                   <li>
-                    <Link href="privacidad">Política de Cookies</Link>
+                    <Link href="/privacidad">Política de Cookies</Link>
                   </li>
                 </ul>
               </div>
@@ -193,16 +193,16 @@ const Footer1 = () => {
             </p>
             <ul className="footer-menu wow fadeInRight" data-wow-delay=".5s">
               <li>
-                <Link href="contacto">Compañía</Link>
+                <Link href="/contacto">Compañía</Link>
               </li>
               <li>
-                <Link href="contacto">Soporte</Link>
+                <Link href="/soporte">Soporte</Link>
               </li>
               <li>
-                <Link href="privacidad">Privacidad</Link>
+                <Link href="/privacidad">Privacidad</Link>
               </li>
               <li>
-                <Link href="contacto">FAQs</Link>
+                <Link href="/contacto">FAQs</Link>
               </li>
             </ul>
           </div>
@@ -228,7 +228,7 @@ const Footer2 = () => {
               <div className="single-footer-widget">
                 <div className="widget-head">
                   <Link href="/">
-                    <span style={{display: "inline-flex", alignItems: "center", gap: "12px"}}><span style={{display: "inline-flex", alignItems: "center", justifyContent: "center", width: "50px", height: "50px", borderRadius: "50%", background: "#fff", flexShrink: 0}}><img src="assets/img/logo/binja-movil.webp" alt="Binja Móvil" style={{height: "38px", width: "auto"}} /></span><span style={{fontWeight: 800, fontSize: "26px", color: "#fff", letterSpacing: "0.3px"}}>Binja Móvil</span></span>
+                    <span style={{display: "inline-flex", alignItems: "center", gap: "12px"}}><span style={{display: "inline-flex", alignItems: "center", justifyContent: "center", width: "50px", height: "50px", borderRadius: "50%", background: "#fff", flexShrink: 0}}><img src="/assets/img/logo/binja-movil.webp" alt="Binja Móvil" style={{height: "38px", width: "auto"}} /></span><span style={{fontWeight: 800, fontSize: "26px", color: "#fff", letterSpacing: "0.3px"}}>Binja Móvil</span></span>
                   </Link>
                 </div>
                 <div className="footer-content">
@@ -263,19 +263,19 @@ const Footer2 = () => {
                 </div>
                 <ul className="list-items">
                   <li>
-                    <Link href="soluciones">Soluciones</Link>
+                    <Link href="/soluciones">Soluciones</Link>
                   </li>
                   <li>
-                    <Link href="equipos">Equipos</Link>
+                    <Link href="/equipos">Equipos</Link>
                   </li>
                   <li>
-                    <Link href="sectores">Sectores</Link>
+                    <Link href="/sectores">Sectores</Link>
                   </li>
                   <li>
-                    <Link href="cobertura">Cobertura</Link>
+                    <Link href="/cobertura">Cobertura</Link>
                   </li>
                   <li>
-                    <Link href="contacto">Contacto</Link>
+                    <Link href="/contacto">Contacto</Link>
                   </li>
                 </ul>
               </div>
@@ -290,19 +290,19 @@ const Footer2 = () => {
                 </div>
                 <ul className="list-items">
                   <li>
-                    <Link href="contacto">Soporte Técnico</Link>
+                    <Link href="/soporte">Soporte Técnico</Link>
                   </li>
                   <li>
-                    <Link href="aviso-privacidad">Aviso de Privacidad</Link>
+                    <Link href="/aviso-privacidad">Aviso de Privacidad</Link>
                   </li>
                   <li>
-                    <Link href="terminos-condiciones">Términos y Condiciones</Link>
+                    <Link href="/terminos-condiciones">Términos y Condiciones</Link>
                   </li>
                   <li>
-                    <Link href="codigo-etica">Código de Ética</Link>
+                    <Link href="/codigo-etica">Código de Ética</Link>
                   </li>
                   <li>
-                    <Link href="privacidad">Política de Cookies</Link>
+                    <Link href="/privacidad">Política de Cookies</Link>
                   </li>
                 </ul>
               </div>
@@ -354,16 +354,16 @@ const Footer2 = () => {
             </p>
             <ul className="footer-menu wow fadeInRight" data-wow-delay=".5s">
               <li>
-                <Link href="contacto">Compañía</Link>
+                <Link href="/contacto">Compañía</Link>
               </li>
               <li>
-                <Link href="contacto">Soporte</Link>
+                <Link href="/soporte">Soporte</Link>
               </li>
               <li>
-                <Link href="privacidad">Privacidad</Link>
+                <Link href="/privacidad">Privacidad</Link>
               </li>
               <li>
-                <Link href="contacto">FAQs</Link>
+                <Link href="/contacto">FAQs</Link>
               </li>
             </ul>
           </div>
@@ -383,7 +383,7 @@ const Footer3 = () => {
         <div className="footer-top">
           <div className="footer-logo wow fadeInUp" data-wow-delay=".3s">
             <Link href="/">
-              <span style={{display: "inline-flex", alignItems: "center", gap: "12px"}}><span style={{display: "inline-flex", alignItems: "center", justifyContent: "center", width: "50px", height: "50px", borderRadius: "50%", background: "#fff", flexShrink: 0}}><img src="assets/img/logo/binja-movil.webp" alt="Binja Móvil" style={{height: "38px", width: "auto"}} /></span><span style={{fontWeight: 800, fontSize: "26px", color: "#fff", letterSpacing: "0.3px"}}>Binja Móvil</span></span>
+              <span style={{display: "inline-flex", alignItems: "center", gap: "12px"}}><span style={{display: "inline-flex", alignItems: "center", justifyContent: "center", width: "50px", height: "50px", borderRadius: "50%", background: "#fff", flexShrink: 0}}><img src="/assets/img/logo/binja-movil.webp" alt="Binja Móvil" style={{height: "38px", width: "auto"}} /></span><span style={{fontWeight: 800, fontSize: "26px", color: "#fff", letterSpacing: "0.3px"}}>Binja Móvil</span></span>
             </Link>
           </div>
           <ul className="wow fadeInUp" data-wow-delay=".5s">

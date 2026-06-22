@@ -1,12 +1,23 @@
 "use client";
 import Link from "next/link";
 import { Fragment, useState } from "react";
+import { soluciones } from "@/data/soluciones";
+
+const solucionesSubmenu = soluciones.map((s) => ({
+  href: `/soluciones/${s.slug}`,
+  title: s.title,
+}));
 
 const navItems = [
-  { id: 1, href: "soluciones", title: "Soluciones" },
-  { id: 2, href: "equipos", title: "Equipos" },
-  { id: 3, href: "sectores", title: "Sectores" },
-  { id: 4, href: "contact", title: "Contacto" },
+  {
+    id: 1,
+    href: "/soluciones",
+    title: "Soluciones",
+    submenu: solucionesSubmenu,
+  },
+  { id: 2, href: "/equipos", title: "Equipos" },
+  { id: 3, href: "/sectores", title: "Sectores" },
+  { id: 4, href: "/contacto", title: "Contacto" },
 ];
 
 const Menus = ({ single, menus }) => {
@@ -33,11 +44,26 @@ const Menus = ({ single, menus }) => {
         </ul>
       ) : (
         <ul>
-          {navItems.map((item) => (
-            <li key={item.id}>
-              <Link href={item.href}>{item.title}</Link>
-            </li>
-          ))}
+          {navItems.map((item) =>
+            item.submenu ? (
+              <li key={item.id} className="has-dropdown">
+                <Link href={item.href}>
+                  {item.title} <i className="fas fa-angle-down" />
+                </Link>
+                <ul className="submenu">
+                  {item.submenu.map((sub, i) => (
+                    <li key={i}>
+                      <Link href={sub.href}>{sub.title}</Link>
+                    </li>
+                  ))}
+                </ul>
+              </li>
+            ) : (
+              <li key={item.id}>
+                <Link href={item.href}>{item.title}</Link>
+              </li>
+            )
+          )}
         </ul>
       )}
     </nav>
@@ -79,14 +105,41 @@ export const MobileMenu = ({ menus, single }) => {
           </Fragment>
         ) : (
           <Fragment>
-            {navItems.map((item, idx) => (
-              <li
-                key={item.id}
-                className={idx === navItems.length - 1 ? "mean-last" : ""}
-              >
-                <Link href={item.href}>{item.title}</Link>
-              </li>
-            ))}
+            {navItems.map((item, idx) =>
+              item.submenu ? (
+                <li key={item.id} className="has-dropdown">
+                  <Link href={item.href}>{item.title}</Link>
+                  <a
+                    className="mean-expand"
+                    href="#"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      activeMenuSet(item.title);
+                    }}
+                  >
+                    <i
+                      className={`fas fa-${
+                        activeMenu === item.title ? "minus" : "plus"
+                      }`}
+                    />
+                  </a>
+                  <ul className="submenu" style={activeLi(item.title)}>
+                    {item.submenu.map((sub, i) => (
+                      <li key={i}>
+                        <Link href={sub.href}>{sub.title}</Link>
+                      </li>
+                    ))}
+                  </ul>
+                </li>
+              ) : (
+                <li
+                  key={item.id}
+                  className={idx === navItems.length - 1 ? "mean-last" : ""}
+                >
+                  <Link href={item.href}>{item.title}</Link>
+                </li>
+              )
+            )}
           </Fragment>
         )}
       </ul>

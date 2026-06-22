@@ -11,7 +11,7 @@ const Offcanvas = ({ closeSidebar, sidebar, single }) => {
               <div className="offcanvas__top mb-5 d-flex justify-content-between align-items-center">
                 <div className="offcanvas__logo">
                   <Link href="/">
-                    <span style={{display: "inline-flex", alignItems: "center", gap: "10px"}}><img src="assets/img/logo/binja-movil.webp" alt="Binja Móvil" style={{height: "50px", width: "auto"}} /><span style={{fontWeight: 700, fontSize: "22px", color: "#d62828", letterSpacing: "0.5px"}}>Binja Móvil</span></span>
+                    <span style={{display: "inline-flex", alignItems: "center", gap: "10px"}}><img src="/assets/img/logo/binja-movil.webp" alt="Binja Móvil" style={{height: "50px", width: "auto"}} /><span style={{fontWeight: 700, fontSize: "22px", color: "#d62828", letterSpacing: "0.5px"}}>Binja Móvil</span></span>
                   </Link>
                 </div>
                 <div className="offcanvas__close">
