@@ -386,6 +386,31 @@
   .binja-header-center { display: none; }
   .binja-header-main .header-right .binja-phone::after { display: none; }
 }
+/* En móvil/tablet: ocultar teléfono y CTA del header (se accede por el menú);
+   dejar solo logo + hamburguesa para evitar overflow horizontal */
+@media (max-width: 991px) {
+  .binja-header-main {
+    padding: 6px 16px;
+    gap: 12px;
+  }
+  .binja-header-main .header-right .binja-phone,
+  .binja-header-main .header-right .binja-cta {
+    display: none !important;
+  }
+  .binja-header-main .header-logo span span {
+    font-size: 18px !important;
+  }
+  .binja-header-main .header-logo img {
+    height: 38px !important;
+  }
+}
+
+/* Evitar scroll horizontal en todo el sitio */
+html,
+body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
 
 /* Texto del top bar en blanco suave (sobre fondo negro) */
 .header-top-wrapper .contact-list li,
