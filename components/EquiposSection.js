@@ -29,7 +29,7 @@ const tabs = [
   },
   {
     key: "amplificadores",
-    label: "Amplificadores de Señal",
+    label: "Equipos de Monitoreo",
     products: [
       {
         img: "antena-exterior.jpg",
@@ -55,7 +55,7 @@ const tabs = [
   },
   {
     key: "rugged",
-    label: "Equipos Rugged",
+    label: "Equipos Ruijie",
     products: [
       {
         img: "router-rugged.jpg",
