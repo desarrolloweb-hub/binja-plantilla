@@ -17,7 +17,7 @@ const sectores = [
   {
     img: "homeoffice.jpg",
     icon: "fas fa-wifi",
-    title: "Home Office Confiable",
+    title: "Home Office",
     desc: "Conectividad móvil de respaldo para colaboradores, videollamadas, sistemas y trabajo remoto.",
   },
   {
