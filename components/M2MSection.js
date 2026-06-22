@@ -54,7 +54,7 @@ const M2MSection = () => {
                 ))}
               </ul>
 
-              <Link href="contact" className="binja-m2m__cta">
+              <Link href="contacto" className="binja-m2m__cta">
                 Contáctanos <i className="fas fa-chevron-right" />
               </Link>
             </div>

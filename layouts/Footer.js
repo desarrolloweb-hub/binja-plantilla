@@ -114,7 +114,7 @@ const Footer1 = () => {
                     <Link href="cobertura">Cobertura</Link>
                   </li>
                   <li>
-                    <Link href="contact">Contacto</Link>
+                    <Link href="contacto">Contacto</Link>
                   </li>
                 </ul>
               </div>
@@ -129,19 +129,19 @@ const Footer1 = () => {
                 </div>
                 <ul className="list-items">
                   <li>
-                    <Link href="contact">Soporte Técnico</Link>
+                    <Link href="contacto">Soporte Técnico</Link>
                   </li>
                   <li>
-                    <Link href="contact">Ayuda &amp; FAQ</Link>
+                    <Link href="aviso-privacidad">Aviso de Privacidad</Link>
                   </li>
                   <li>
-                    <Link href="contact">Contáctanos</Link>
+                    <Link href="terminos-condiciones">Términos y Condiciones</Link>
                   </li>
                   <li>
-                    <Link href="soluciones">Planes y Paquetes</Link>
+                    <Link href="codigo-etica">Código de Ética</Link>
                   </li>
                   <li>
-                    <Link href="privacy">Política de Cookies</Link>
+                    <Link href="privacidad">Política de Cookies</Link>
                   </li>
                 </ul>
               </div>
@@ -170,18 +170,9 @@ const Footer1 = () => {
             >
               <div className="single-footer-widget">
                 <div className="widget-head">
-                  <h5>Descarga la app</h5>
+                  <h5>Soporte</h5>
                 </div>
                 <div className="footer-apps-items">
-                  <p>Disponible en App Store y Google Play</p>
-                  <div className="apps-image d-flex align-items-center">
-                    <a href="#">
-                      <img src="assets/img/app-store.png" alt="store-img" />
-                    </a>
-                    <a href="#">
-                      <img src="assets/img/google-play.png" alt="store-img" />
-                    </a>
-                  </div>
                   <div className="support-text">
                     <p>Centro de soporte 24/7</p>
                     <h3>
@@ -202,16 +193,16 @@ const Footer1 = () => {
             </p>
             <ul className="footer-menu wow fadeInRight" data-wow-delay=".5s">
               <li>
-                <Link href="contact">Compañía</Link>
+                <Link href="contacto">Compañía</Link>
               </li>
               <li>
-                <Link href="contact">Soporte</Link>
+                <Link href="contacto">Soporte</Link>
               </li>
               <li>
-                <Link href="privacy">Privacidad</Link>
+                <Link href="privacidad">Privacidad</Link>
               </li>
               <li>
-                <Link href="contact">FAQs</Link>
+                <Link href="contacto">FAQs</Link>
               </li>
             </ul>
           </div>
@@ -284,7 +275,7 @@ const Footer2 = () => {
                     <Link href="cobertura">Cobertura</Link>
                   </li>
                   <li>
-                    <Link href="contact">Contacto</Link>
+                    <Link href="contacto">Contacto</Link>
                   </li>
                 </ul>
               </div>
@@ -299,19 +290,19 @@ const Footer2 = () => {
                 </div>
                 <ul className="list-items">
                   <li>
-                    <Link href="contact">Soporte Técnico</Link>
+                    <Link href="contacto">Soporte Técnico</Link>
                   </li>
                   <li>
-                    <Link href="contact">Ayuda &amp; FAQ</Link>
+                    <Link href="aviso-privacidad">Aviso de Privacidad</Link>
                   </li>
                   <li>
-                    <Link href="contact">Contáctanos</Link>
+                    <Link href="terminos-condiciones">Términos y Condiciones</Link>
                   </li>
                   <li>
-                    <Link href="soluciones">Planes y Paquetes</Link>
+                    <Link href="codigo-etica">Código de Ética</Link>
                   </li>
                   <li>
-                    <Link href="privacy">Política de Cookies</Link>
+                    <Link href="privacidad">Política de Cookies</Link>
                   </li>
                 </ul>
               </div>
@@ -340,18 +331,9 @@ const Footer2 = () => {
             >
               <div className="single-footer-widget">
                 <div className="widget-head">
-                  <h5>Descarga la app</h5>
+                  <h5>Soporte</h5>
                 </div>
                 <div className="footer-apps-items">
-                  <p>Disponible en App Store y Google Play</p>
-                  <div className="apps-image d-flex align-items-center">
-                    <a href="#">
-                      <img src="assets/img/app-store.png" alt="store-img" />
-                    </a>
-                    <a href="#">
-                      <img src="assets/img/google-play.png" alt="store-img" />
-                    </a>
-                  </div>
                   <div className="support-text">
                     <p>Centro de soporte 24/7</p>
                     <h3>
@@ -372,16 +354,16 @@ const Footer2 = () => {
             </p>
             <ul className="footer-menu wow fadeInRight" data-wow-delay=".5s">
               <li>
-                <Link href="contact">Compañía</Link>
+                <Link href="contacto">Compañía</Link>
               </li>
               <li>
-                <Link href="contact">Soporte</Link>
+                <Link href="contacto">Soporte</Link>
               </li>
               <li>
-                <Link href="privacy">Privacidad</Link>
+                <Link href="privacidad">Privacidad</Link>
               </li>
               <li>
-                <Link href="contact">FAQs</Link>
+                <Link href="contacto">FAQs</Link>
               </li>
             </ul>
           </div>

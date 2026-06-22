@@ -79,7 +79,7 @@ const page = () => {
                       <Link href="shows-details" className="theme-btn">
                         <span>Watch movie</span>
                       </Link>
-                      <Link href="contact" className="theme-btn theme-btn-2">
+                      <Link href="contacto" className="theme-btn theme-btn-2">
                         <span>Buy ticket</span>
                       </Link>
                     </div>

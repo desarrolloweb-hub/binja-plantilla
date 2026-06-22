@@ -86,7 +86,7 @@ const Header1 = ({ openSidebar, single, menus }) => {
               </div>
               <ul className="header-menu">
                 <li>
-                  <Link href="contact">Soporte Técnico</Link>
+                  <Link href="contacto">Soporte Técnico</Link>
                 </li>
                 <li>
                   <Link href="cobertura">Cobertura</Link>
@@ -127,7 +127,7 @@ const Header1 = ({ openSidebar, single, menus }) => {
                   </a>
                   <div className="header-button">
                     <Link
-                      href="contact"
+                      href="contacto"
                       className="binja-cta"
                       style={{
                         display: "inline-block",
@@ -249,7 +249,7 @@ const Header2 = ({ openSidebar, single, menus }) => {
                 </div>
 
                 <div className="header-button">
-                  <Link href="contact" className="theme-btn">
+                  <Link href="contacto" className="theme-btn">
                     <span>
                       Agenda consultoría
                       <i className="fas fa-chevron-right" />
@@ -284,7 +284,7 @@ const Header3 = ({ openSidebar, single, menus }) => {
               <ul className="contact-list">
                 <li>
                   <span>Call</span>Consult With It Advisor?{" "}
-                  <Link href="contact">Click Now</Link>
+                  <Link href="contacto">Click Now</Link>
                 </li>
                 <li>
                   <i className="fas fa-map-marker-alt" />
@@ -342,7 +342,7 @@ const Header3 = ({ openSidebar, single, menus }) => {
                 </div>
                 <div className="header-right d-flex justify-content-end align-items-center">
                   <div className="header-button">
-                    <Link href="contact" className="theme-btn theme-btn-2">
+                    <Link href="contacto" className="theme-btn theme-btn-2">
                       <span>
                         Agenda consultoría
                         <i className="fas fa-chevron-right" />
@@ -395,7 +395,7 @@ const Header4 = ({ openSidebar, single, menus }) => {
             <div className="header-right d-flex justify-content-end align-items-center">
 
               <div className="header-button">
-                <Link href="contact" className="theme-btn">
+                <Link href="contacto" className="theme-btn">
                   <span>
                     Agenda consultoría
                     <i className="fas fa-chevron-right" />

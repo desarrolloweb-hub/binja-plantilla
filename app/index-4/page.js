@@ -248,7 +248,7 @@ const page = () => {
                   </li>
                 </ul>
                 <div className="price-button">
-                  <Link href="contact" className="theme-btn w-100 text-center">
+                  <Link href="contacto" className="theme-btn w-100 text-center">
                     <span>subscribe now</span>
                   </Link>
                 </div>
@@ -310,7 +310,7 @@ const page = () => {
                   </li>
                 </ul>
                 <div className="price-button">
-                  <Link href="contact" className="theme-btn w-100 text-center">
+                  <Link href="contacto" className="theme-btn w-100 text-center">
                     <span>subscribe now</span>
                   </Link>
                 </div>
@@ -372,7 +372,7 @@ const page = () => {
                   </li>
                 </ul>
                 <div className="price-button">
-                  <Link href="contact" className="theme-btn w-100 text-center">
+                  <Link href="contacto" className="theme-btn w-100 text-center">
                     <span>subscribe now</span>
                   </Link>
                 </div>

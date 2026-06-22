@@ -93,7 +93,7 @@ const page = () => {
                 4.0 en zonas remotas.
               </p>
               <div className="amplimax-hero__buttons">
-                <Link href="contact" className="amplimax-btn">
+                <Link href="contacto" className="amplimax-btn">
                   Solicitar información <i className="fas fa-chevron-right" />
                 </Link>
                 <a
@@ -358,7 +358,7 @@ const page = () => {
                 campo.
               </p>
               <div className="amplimax-cta__buttons">
-                <Link href="contact" className="amplimax-btn">
+                <Link href="contacto" className="amplimax-btn">
                   Agenda consultoría <i className="fas fa-chevron-right" />
                 </Link>
                 <a

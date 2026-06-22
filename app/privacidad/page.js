@@ -166,7 +166,7 @@ const page = () => {
 
             <div className="binja-legal__cta">
               <p>¿Tienes dudas sobre el tratamiento de tus datos?</p>
-              <Link href="contact" className="binja-legal__btn">
+              <Link href="contacto" className="binja-legal__btn">
                 Contáctanos <i className="fas fa-chevron-right" />
               </Link>
             </div>

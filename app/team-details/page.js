@@ -68,7 +68,7 @@ const page = () => {
                       <i className="fab fa-pinterest-p" />
                     </a>
                   </div>
-                  <Link href="contact" className="theme-btn mt-5">
+                  <Link href="contacto" className="theme-btn mt-5">
                     <span className="mb-0">
                       Get a Free Quate
                       <i className="fas fa-chevron-right" />

@@ -807,8 +807,8 @@
 /* Tabs */
 .binja-equipos__tabs {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
   margin-bottom: 45px;
 }
 .binja-equipos__tab {
@@ -818,9 +818,10 @@
   font-family: "Manrope", "Inter", sans-serif;
   font-size: 16px;
   font-weight: 700;
-  padding: 18px 20px;
+  padding: 18px 16px;
   border-radius: 10px;
   cursor: pointer;
+  text-align: center;
   transition: background 0.25s ease, color 0.25s ease, transform 0.2s ease;
 }
 .binja-equipos__tab:hover {
@@ -830,8 +831,12 @@
   background: #e21d1d;
   color: #fff;
 }
-@media (max-width: 767px) {
-  .binja-equipos__tabs { grid-template-columns: 1fr; gap: 12px; }
+@media (max-width: 991px) {
+  .binja-equipos__tabs { gap: 12px; }
+  .binja-equipos__tab { font-size: 15px; padding: 16px 12px; }
+}
+@media (max-width: 575px) {
+  .binja-equipos__tabs { grid-template-columns: repeat(2, 1fr); }
 }
 
 /* Product card */

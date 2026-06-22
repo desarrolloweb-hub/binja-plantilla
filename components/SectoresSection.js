@@ -58,7 +58,7 @@ const SectoresSection = () => {
         <div className="row g-4">
           {sectores.map((s, i) => (
             <div className="col-lg-4 col-md-6" key={i}>
-              <Link href="contact" className="binja-sector-card">
+              <Link href="contacto" className="binja-sector-card">
                 <div className="binja-sector-card__img">
                   <img src={`assets/img/solutions/${s.img}`} alt={s.title} />
                 </div>

@@ -162,7 +162,7 @@ const CookieConsent = () => {
                 personalizar
               </button>
               . Consulta nuestra{" "}
-              <a className="binja-cookie__inline-link" href="/privacy">
+              <a className="binja-cookie__inline-link" href="/privacidad">
                 Política de privacidad
               </a>
               .

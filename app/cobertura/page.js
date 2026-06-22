@@ -268,7 +268,7 @@ const page = () => {
               </p>
             </div>
             <div className="binja-cob-cta__btns">
-              <Link href="contact" className="binja-cob-cta__btn">
+              <Link href="contacto" className="binja-cob-cta__btn">
                 Consultar cobertura <i className="fas fa-chevron-right" />
               </Link>
               <a

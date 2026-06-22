@@ -1157,7 +1157,7 @@ const page = () => {
                         30 <i>$</i>
                         <span>/mo</span>
                       </h3>
-                      <Link href="contact" className="theme-btn">
+                      <Link href="contacto" className="theme-btn">
                         <span>Get Started</span>
                       </Link>
                     </div>
@@ -1214,7 +1214,7 @@ const page = () => {
                         40 <i>$</i>
                         <span>/mo</span>
                       </h3>
-                      <Link href="contact" className="theme-btn">
+                      <Link href="contacto" className="theme-btn">
                         <span>Get Started</span>
                       </Link>
                     </div>
@@ -1268,7 +1268,7 @@ const page = () => {
                         60 <i>$</i>
                         <span>/mo</span>
                       </h3>
-                      <Link href="contact" className="theme-btn">
+                      <Link href="contacto" className="theme-btn">
                         <span>Get Started</span>
                       </Link>
                     </div>

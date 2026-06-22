@@ -229,7 +229,7 @@ const page = () => {
               </h2>
             </div>
             <Link
-              href="contact"
+              href="contacto"
               className="theme-btn hover-white wow fadeInUp"
               data-wow-delay=".5s"
             >

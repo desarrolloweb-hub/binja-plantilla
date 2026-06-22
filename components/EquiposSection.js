@@ -4,32 +4,8 @@ import { useState } from "react";
 
 const tabs = [
   {
-    key: "routers",
-    label: "Routers",
-    products: [
-      {
-        img: "router-portatil.jpg",
-        name: "CSG m106 Pro - Router 4G Portátil",
-        desc: "Compacto y plug-and-play para conectar tu equipo en minutos.",
-        specs: ["4G LTE", "WiFi", "Portátil"],
-      },
-      {
-        img: "router-rugged.jpg",
-        name: "Katalyst Spark 5G - Router Empresarial",
-        desc: "Alto rendimiento para operaciones que exigen máxima velocidad.",
-        specs: ["5G", "Multi-SIM", "Empresarial"],
-      },
-      {
-        img: "mifi-hotspot.jpg",
-        name: "InHand CR202 Lite - Router 4G LTE CAT6 con WiFi",
-        desc: "Conectividad confiable con WiFi integrado para varios dispositivos.",
-        specs: ["LTE CAT6", "WiFi", "Compacto"],
-      },
-    ],
-  },
-  {
-    key: "amplificadores",
-    label: "Equipos de Monitoreo",
+    key: "amplimax",
+    label: "Elsys - Amplimax",
     products: [
       {
         img: "antena-exterior.jpg",
@@ -54,8 +30,32 @@ const tabs = [
     ],
   },
   {
-    key: "rugged",
-    label: "Equipos Ruijie",
+    key: "teltonika",
+    label: "Teltonika",
+    products: [
+      {
+        img: "router-portatil.jpg",
+        name: "CSG m106 Pro - Router 4G Portátil",
+        desc: "Compacto y plug-and-play para conectar tu equipo en minutos.",
+        specs: ["4G LTE", "WiFi", "Portátil"],
+      },
+      {
+        img: "router-rugged.jpg",
+        name: "Katalyst Spark 5G - Router Empresarial",
+        desc: "Alto rendimiento para operaciones que exigen máxima velocidad.",
+        specs: ["5G", "Multi-SIM", "Empresarial"],
+      },
+      {
+        img: "mifi-hotspot.jpg",
+        name: "InHand CR202 Lite - Router 4G LTE CAT6 con WiFi",
+        desc: "Conectividad confiable con WiFi integrado para varios dispositivos.",
+        specs: ["LTE CAT6", "WiFi", "Compacto"],
+      },
+    ],
+  },
+  {
+    key: "ruijie",
+    label: "Ruijie",
     products: [
       {
         img: "router-rugged.jpg",
@@ -74,6 +74,30 @@ const tabs = [
         name: "InHand CR202 Lite - Router Resistente a Golpes",
         desc: "Carcasa reforzada para operación continua en exteriores.",
         specs: ["Anti-golpes", "LTE", "Exterior"],
+      },
+    ],
+  },
+  {
+    key: "peplink",
+    label: "Peplink",
+    products: [
+      {
+        img: "router-rugged.jpg",
+        name: "Katalyst Spark 5G - Router Empresarial",
+        desc: "Alto rendimiento para operaciones que exigen máxima velocidad.",
+        specs: ["5G", "Multi-SIM", "Empresarial"],
+      },
+      {
+        img: "router-portatil.jpg",
+        name: "CSG m106 Pro - Router 4G Portátil",
+        desc: "Compacto y plug-and-play para conectar tu equipo en minutos.",
+        specs: ["4G LTE", "WiFi", "Portátil"],
+      },
+      {
+        img: "mifi-hotspot.jpg",
+        name: "InHand CR202 Lite - Router 4G LTE CAT6 con WiFi",
+        desc: "Conectividad confiable con WiFi integrado para varios dispositivos.",
+        specs: ["LTE CAT6", "WiFi", "Compacto"],
       },
     ],
   },
@@ -103,7 +127,7 @@ const features = [
 ];
 
 const EquiposSection = () => {
-  const [active, setActive] = useState("routers");
+  const [active, setActive] = useState("amplimax");
   const current = tabs.find((t) => t.key === active);
 
   return (

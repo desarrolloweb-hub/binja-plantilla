@@ -649,7 +649,7 @@ const page = () => {
                     Internet with a 1000 Mbps
                   </li>
                 </ul>
-                <Link href="contact" className="theme-btn theme-btn-2">
+                <Link href="contacto" className="theme-btn theme-btn-2">
                   <span>Choose Plan</span>
                 </Link>
               </div>
@@ -691,7 +691,7 @@ const page = () => {
                     Internet with a 1000 Mbps
                   </li>
                 </ul>
-                <Link href="contact" className="theme-btn theme-btn-2">
+                <Link href="contacto" className="theme-btn theme-btn-2">
                   <span>Choose Plan</span>
                 </Link>
               </div>
@@ -736,7 +736,7 @@ const page = () => {
                     Internet with a 1000 Mbps
                   </li>
                 </ul>
-                <Link href="contact" className="theme-btn theme-btn-2">
+                <Link href="contacto" className="theme-btn theme-btn-2">
                   <span>Choose Plan</span>
                 </Link>
               </div>
