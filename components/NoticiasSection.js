@@ -68,7 +68,7 @@ const NoticiasSection = () => {
                     </span>
                   </div>
                   <p className="binja-noticia-card__excerpt">{a.excerpt}</p>
-                  <Link href="news" className="binja-noticia-card__link">
+                  <Link href="contacto" className="binja-noticia-card__link">
                     Leer Artículo <i className="fas fa-chevron-right" />
                   </Link>
                 </div>

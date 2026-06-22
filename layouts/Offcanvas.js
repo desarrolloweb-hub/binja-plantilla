@@ -21,16 +21,14 @@ const Offcanvas = ({ closeSidebar, sidebar, single }) => {
                 </div>
               </div>
               <p className="d-none d-xl-block">
-                Ne summo dictas pertinacia nam. Illum cetero vocent ei vim, case
-                regione signiferumque vim te. Ex mea quem munere lobortis. Duis
-                aute irure dolor in reprehenderit in voluptate velit esse
-                cillum.
+                Conectividad híbrida para cualquier entorno. Internet que se
+                mueve contigo.
               </p>
               <div className="mobile-menu fix mb-3 mean-container">
                 <MobileMenu single={single} />
               </div>
               <div className="offcanvas__contact">
-                <h4>Contact Info</h4>
+                <h4>Información de contacto</h4>
                 <ul>
                   <li className="d-flex align-items-center">
                     <div className="offcanvas__contact-icon">
@@ -60,39 +58,40 @@ const Offcanvas = ({ closeSidebar, sidebar, single }) => {
                     </div>
                     <div className="offcanvas__contact-text">
                       <a target="_blank" href="#">
-                        Mod-friday, 09am -05pm
+                        Lunes a Sábado, 9:00am – 6:00pm
                       </a>
                     </div>
                   </li>
                   <li className="d-flex align-items-center">
                     <div className="offcanvas__contact-icon mr-15">
-                      <i className="far fa-phone" />
+                      <i className="fas fa-phone" />
                     </div>
                     <div className="offcanvas__contact-text">
-                      <a href="tel:+11002345909">+11002345909</a>
+                      <a
+                        href="https://wa.me/525665938841"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        +52 56 6593 8841
+                      </a>
                     </div>
                   </li>
                 </ul>
                 <div className="header-button mt-4">
                   <Link href="contacto" className="theme-btn text-center">
                     <span>
-                      Contact Us
+                      Contáctanos
                       <i className="fas fa-chevron-right" />
                     </span>
                   </Link>
                 </div>
                 <div className="social-icon d-flex align-items-center">
-                  <a href="#">
-                    <i className="fab fa-facebook-f" />
-                  </a>
-                  <a href="#">
-                    <i className="fab fa-twitter" />
-                  </a>
-                  <a href="#">
-                    <i className="fab fa-youtube" />
-                  </a>
-                  <a href="#">
-                    <i className="fab fa-linkedin-in" />
+                  <a
+                    href="https://instagram.com/binjamovil"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i className="fab fa-instagram" />
                   </a>
                 </div>
               </div>

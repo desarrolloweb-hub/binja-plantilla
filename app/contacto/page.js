@@ -25,7 +25,7 @@ const infoCards = [
   {
     icon: "far fa-clock",
     label: "Horario",
-    value: "Lun a Vie · 9:30am – 6:30pm",
+    value: "Lun a Sáb · 9:00am – 6:00pm",
     href: null,
     external: false,
   },

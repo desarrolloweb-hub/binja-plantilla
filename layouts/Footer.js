@@ -158,8 +158,8 @@ const Footer1 = () => {
                   <p>3er Ave. 306, Colonia Guerra, Guadalupe, Nuevo León, México</p>
                   <h5>Horario:</h5>
                   <p>
-                    9:30am – 6:30pm <br />
-                    Lunes a Viernes
+                    9:00am – 6:00pm <br />
+                    Lunes a Sábado
                   </p>
                 </div>
               </div>
@@ -319,8 +319,8 @@ const Footer2 = () => {
                   <p>3er Ave. 306, Colonia Guerra, Guadalupe, Nuevo León, México</p>
                   <h5>Horario:</h5>
                   <p>
-                    9:30am – 6:30pm <br />
-                    Lunes a Viernes
+                    9:00am – 6:00pm <br />
+                    Lunes a Sábado
                   </p>
                 </div>
               </div>
