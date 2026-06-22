@@ -1,11 +1,20 @@
 "use client";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { Fragment, useState } from "react";
 import { soluciones } from "@/data/soluciones";
+import { equipos } from "@/data/equipos";
 
 const solucionesSubmenu = soluciones.map((s) => ({
   href: `/soluciones/${s.slug}`,
   title: s.title,
+  icon: s.icon,
+}));
+
+const equiposSubmenu = equipos.map((e) => ({
+  href: `/equipos/${e.slug}`,
+  title: e.title,
+  icon: e.icon,
 }));
 
 const navItems = [
@@ -15,12 +24,22 @@ const navItems = [
     title: "Soluciones",
     submenu: solucionesSubmenu,
   },
-  { id: 2, href: "/equipos", title: "Equipos" },
+  {
+    id: 2,
+    href: "/equipos",
+    title: "Equipos",
+    submenu: equiposSubmenu,
+  },
   { id: 3, href: "/sectores", title: "Sectores" },
   { id: 4, href: "/contacto", title: "Contacto" },
 ];
 
+// Coincidencia exacta o de ruta anidada (/soluciones activa en /soluciones/...)
+const matchPath = (pathname, href) =>
+  pathname === href || (href !== "/" && pathname.startsWith(`${href}/`));
+
 const Menus = ({ single, menus }) => {
+  const pathname = usePathname() || "/";
   const singleMenus = menus
     ? menus
     : [
@@ -44,26 +63,43 @@ const Menus = ({ single, menus }) => {
         </ul>
       ) : (
         <ul>
-          {navItems.map((item) =>
-            item.submenu ? (
-              <li key={item.id} className="has-dropdown">
+          {navItems.map((item) => {
+            const active = matchPath(pathname, item.href);
+            return item.submenu ? (
+              <li
+                key={item.id}
+                className={`has-dropdown${active ? " binja-active" : ""}`}
+              >
                 <Link href={item.href}>
                   {item.title} <i className="fas fa-angle-down" />
                 </Link>
-                <ul className="submenu">
+                <ul className="submenu binja-submenu">
                   {item.submenu.map((sub, i) => (
                     <li key={i}>
-                      <Link href={sub.href}>{sub.title}</Link>
+                      <Link
+                        href={sub.href}
+                        className={`binja-submenu__item${
+                          pathname === sub.href
+                            ? " binja-submenu__item--active"
+                            : ""
+                        }`}
+                      >
+                        <i className={sub.icon} />
+                        <span>{sub.title}</span>
+                      </Link>
                     </li>
                   ))}
                 </ul>
               </li>
             ) : (
-              <li key={item.id}>
+              <li
+                key={item.id}
+                className={active ? "binja-active" : undefined}
+              >
                 <Link href={item.href}>{item.title}</Link>
               </li>
-            )
-          )}
+            );
+          })}
         </ul>
       )}
     </nav>
@@ -72,6 +108,7 @@ const Menus = ({ single, menus }) => {
 export default Menus;
 
 export const MobileMenu = ({ menus, single }) => {
+  const pathname = usePathname() || "/";
   const [activeMenu, setActiveMenu] = useState("");
   const activeMenuSet = (value) =>
     setActiveMenu(activeMenu === value ? "" : value);
@@ -105,9 +142,13 @@ export const MobileMenu = ({ menus, single }) => {
           </Fragment>
         ) : (
           <Fragment>
-            {navItems.map((item, idx) =>
-              item.submenu ? (
-                <li key={item.id} className="has-dropdown">
+            {navItems.map((item, idx) => {
+              const active = matchPath(pathname, item.href);
+              return item.submenu ? (
+                <li
+                  key={item.id}
+                  className={`has-dropdown${active ? " binja-active" : ""}`}
+                >
                   <Link href={item.href}>{item.title}</Link>
                   <a
                     className="mean-expand"
@@ -126,7 +167,14 @@ export const MobileMenu = ({ menus, single }) => {
                   <ul className="submenu" style={activeLi(item.title)}>
                     {item.submenu.map((sub, i) => (
                       <li key={i}>
-                        <Link href={sub.href}>{sub.title}</Link>
+                        <Link
+                          href={sub.href}
+                          className={
+                            pathname === sub.href ? "binja-active" : undefined
+                          }
+                        >
+                          {sub.title}
+                        </Link>
                       </li>
                     ))}
                   </ul>
@@ -134,12 +182,14 @@ export const MobileMenu = ({ menus, single }) => {
               ) : (
                 <li
                   key={item.id}
-                  className={idx === navItems.length - 1 ? "mean-last" : ""}
+                  className={`${idx === navItems.length - 1 ? "mean-last" : ""}${
+                    active ? " binja-active" : ""
+                  }`}
                 >
                   <Link href={item.href}>{item.title}</Link>
                 </li>
-              )
-            )}
+              );
+            })}
           </Fragment>
         )}
       </ul>

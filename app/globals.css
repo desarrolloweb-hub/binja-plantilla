@@ -2762,6 +2762,98 @@ a.binja-contact-info__item:hover {
 }
 
 /* ======================================================
+   Submenú de Soluciones (dropdown navegación)
+   ====================================================== */
+.header-main .main-menu ul li .submenu.binja-submenu {
+  display: flex !important;
+  flex-direction: column;
+  gap: 2px;
+  width: 296px;
+  min-width: 296px;
+  padding: 8px;
+  border-radius: 14px;
+  border: 1px solid #f0f1f3;
+  box-shadow: 0 20px 46px rgba(12, 17, 23, 0.14);
+}
+.header-main .main-menu ul li .submenu.binja-submenu li {
+  display: block !important;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+/* Neutralizar estilos de submenu del template */
+.header-main .main-menu ul li .submenu.binja-submenu li a,
+.header-main .main-menu ul li .submenu.binja-submenu li:hover > a {
+  width: auto;
+  border: none;
+  background: transparent;
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit !important;
+}
+.binja-submenu__item {
+  position: relative;
+  display: flex !important;
+  align-items: center;
+  gap: 12px;
+  padding: 9px 12px !important;
+  border-radius: 10px;
+  font-family: "Manrope", "Inter", sans-serif;
+  font-size: 14.5px;
+  font-weight: 600;
+  color: #3a4048 !important;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+.binja-submenu__item i {
+  flex-shrink: 0;
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9px;
+  background: #f4f5f7;
+  font-size: 14px;
+  color: #9aa0a8;
+  margin: 0 !important;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+.binja-submenu__item:hover {
+  background: #faf3f3;
+  color: #e21d1d !important;
+}
+.binja-submenu__item:hover i {
+  background: #e21d1d;
+  color: #fff;
+}
+.binja-submenu__item--active {
+  background: #fdeeee;
+  color: #e21d1d !important;
+}
+.binja-submenu__item--active i {
+  background: #e21d1d;
+  color: #fff;
+}
+
+/* Estado activo en el nav principal (página actual) */
+.header-main .main-menu ul li.binja-active > a {
+  color: #e21d1d !important;
+}
+.header-main .main-menu ul li > a {
+  position: relative;
+}
+.header-main .main-menu ul li.binja-active > a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 3px;
+  border-radius: 3px 3px 0 0;
+  background: #e21d1d;
+}
+
+/* ======================================================
    Soluciones — índice e interiores
    ====================================================== */
 /* Índice /soluciones */
