@@ -3,54 +3,40 @@ import { useEffect, useState } from "react";
 
 const testimonios = [
   {
-    name: "Laura Herrera",
-    role: "CEO",
-    company: "Food Trucks MX",
-    badge: "15 food trucks",
+    name: "IKAAN Villas Spa",
+    role: "Hotel en Monterrerolos, N.L.",
+    company: "Conectividad para huéspedes",
+    badge: "Satelital + NOC",
+    badgeIcon: "fas fa-satellite-dish",
     quote:
-      "Necesitábamos conectividad confiable para nuestros puntos de venta móviles. Binja Móvil nos instaló routers 4G con respaldo satelital y ahora procesamos pagos digitales sin problemas en cualquier evento o ubicación.",
-    category: "Food & Beverage",
-    date: "Abril 2025",
+      "En IKAAN Villas Spa necesitaban conectividad confiable para sus huéspedes en una zona donde no llega la fibra óptica. Implementamos una solución satelital administrada con monitoreo y soporte desde nuestro NOC para mantener la continuidad del servicio en la operación del hotel.",
+    category: "Hotelería / Turismo",
+    categoryIcon: "fas fa-hotel",
+    date: "Junio 2026",
   },
   {
-    name: "Carlos Méndez",
-    role: "Director de Operaciones",
-    company: "Constructora del Norte",
-    badge: "+40% eficiencia",
+    name: "Daniel Martínez",
+    role: "Flotilla de camiones",
+    company: "Internet en movimiento",
+    badge: "Internet en flotilla",
+    badgeIcon: "fas fa-truck-moving",
     quote:
-      "Implementamos conectividad satelital + 4G en 5 obras simultáneas donde no llegaba infraestructura tradicional. Logramos cobertura del 100% en todas las casetas de obra y redujimos los tiempos de reporte en un 60%. Binja Móvil entendió nuestra necesidad desde el primer día.",
-    category: "Construcción",
-    date: "Marzo 2025",
+      "Implementamos conectividad móvil para su flotilla de camiones, permitiendo mantener internet disponible durante los recorridos. La solución mejora la comunicación, la operación y el seguimiento de las unidades en movimiento.",
+    category: "Transporte / Logística",
+    categoryIcon: "fas fa-truck",
+    date: "Junio 2026",
   },
   {
-    name: "Mariana López",
-    role: "Productora Ejecutiva",
-    company: "Cumbre Producciones",
-    badge: "50K usuarios",
+    name: "Rancho Mirador Estelar",
+    role: "Rancho y viñedo",
+    company: "Monitoreo en campo",
+    badge: "Satelital + IoT",
+    badgeIcon: "fas fa-wifi",
     quote:
-      "Desplegaron una red híbrida satelital-celular para cubrir nuestro festival de 3 días en un terreno remoto. Conectaron puntos de venta, staff y transmisión en vivo sin una sola caída. El soporte técnico estuvo presente 24/7. Increíble servicio.",
-    category: "Eventos",
-    date: "Enero 2025",
-  },
-  {
-    name: "Roberto Sánchez",
-    role: "Gerente de TI",
-    company: "Agroindustrias del Valle",
-    badge: "12 sitios remotos",
-    quote:
-      "Conectamos 12 ranchos y centros de acopio que estaban totalmente aislados. Ahora tenemos monitoreo en tiempo real de toda la operación agrícola y comunicación constante con el campo.",
-    category: "Agroindustria",
-    date: "Febrero 2025",
-  },
-  {
-    name: "Ana Gutiérrez",
-    role: "Coordinadora Logística",
-    company: "TransExpress",
-    badge: "200 unidades",
-    quote:
-      "Equipamos toda nuestra flota con routers móviles administrados. El rastreo GPS y la conectividad de las unidades mejoró nuestra eficiencia logística de forma notable.",
-    category: "Transporte",
-    date: "Diciembre 2024",
+      "Implementamos conectividad satelital para mantener comunicación en el rancho y en el viñedo, incluso en zonas donde no llega la infraestructura tradicional. La solución integra monitoreo IoT para cámaras, supervisión en campo y conectividad en su camioneta de trabajo, mejorando la visibilidad de la operación y la continuidad del servicio.",
+    category: "Campo / Viñedo",
+    categoryIcon: "fas fa-wine-bottle",
+    date: "Junio 2026",
   },
 ];
 
@@ -123,7 +109,7 @@ const CasosExitoSection = () => {
                         </div>
                       </div>
                       <span className="binja-caso-card__badge">
-                        <i className="fas fa-chart-line" />
+                        <i className={t.badgeIcon || "fas fa-chart-line"} />
                         {t.badge}
                       </span>
                     </div>
@@ -132,7 +118,7 @@ const CasosExitoSection = () => {
 
                     <div className="binja-caso-card__footer">
                       <span className="binja-caso-card__category">
-                        <i className="fas fa-store" />
+                        <i className={t.categoryIcon || "fas fa-store"} />
                         {t.category}
                       </span>
                       <span className="binja-caso-card__date">{t.date}</span>
